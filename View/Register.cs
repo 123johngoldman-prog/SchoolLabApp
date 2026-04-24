@@ -14,5 +14,10 @@ namespace SchoolLabApp.View
         {
             InitializeComponent();
         }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
