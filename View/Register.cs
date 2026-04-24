@@ -19,5 +19,18 @@ namespace SchoolLabApp.View
         {
 
         }
+
+        private void checkBoxRegister_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxRegister.Checked)
+            {
+                txtRegisterPassword.UseSystemPasswordChar = false;
+
+            }
+            else
+            {
+                txtRegisterPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

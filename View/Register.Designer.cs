@@ -60,6 +60,7 @@
             checkBoxRegister.Size = new Size(15, 14);
             checkBoxRegister.TabIndex = 43;
             checkBoxRegister.UseVisualStyleBackColor = true;
+            checkBoxRegister.CheckedChanged += checkBoxRegister_CheckedChanged;
             // 
             // label3
             // 
@@ -82,10 +83,10 @@
             // txtRegisterPasswordConfirm
             // 
             txtRegisterPasswordConfirm.Location = new Point(77, 354);
-            txtRegisterPasswordConfirm.Multiline = true;
             txtRegisterPasswordConfirm.Name = "txtRegisterPasswordConfirm";
             txtRegisterPasswordConfirm.Size = new Size(199, 23);
             txtRegisterPasswordConfirm.TabIndex = 40;
+            txtRegisterPasswordConfirm.UseSystemPasswordChar = true;
             // 
             // txtRegisterPassword
             // 
@@ -93,6 +94,7 @@
             txtRegisterPassword.Name = "txtRegisterPassword";
             txtRegisterPassword.Size = new Size(199, 23);
             txtRegisterPassword.TabIndex = 39;
+            txtRegisterPassword.UseSystemPasswordChar = true;
             // 
             // label5
             // 

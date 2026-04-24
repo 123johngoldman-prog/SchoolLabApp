@@ -14,5 +14,24 @@ namespace SchoolLabApp.View
         {
             InitializeComponent();
         }
+
+        private void checkBoxLogin_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxLogin.Checked)
+            {
+                txtLoginPassword.UseSystemPasswordChar = false;
+
+            }
+            else
+            {
+                txtLoginPassword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void btnLoginRegister_Click(object sender, EventArgs e)
+        {
+            var register = new Register();
+            register.ShowDialog();
+        }
     }
 }

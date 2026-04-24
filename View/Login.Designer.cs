@@ -59,10 +59,10 @@
             // txtLoginPassword
             // 
             txtLoginPassword.Location = new Point(70, 243);
-            txtLoginPassword.Multiline = true;
             txtLoginPassword.Name = "txtLoginPassword";
             txtLoginPassword.Size = new Size(199, 23);
             txtLoginPassword.TabIndex = 28;
+            txtLoginPassword.UseSystemPasswordChar = true;
             // 
             // txtLoginUsername
             // 
@@ -88,6 +88,7 @@
             checkBoxLogin.Size = new Size(15, 14);
             checkBoxLogin.TabIndex = 37;
             checkBoxLogin.UseVisualStyleBackColor = true;
+            checkBoxLogin.CheckedChanged += checkBoxLogin_CheckedChanged;
             // 
             // btnLoginLogin
             // 
@@ -116,6 +117,7 @@
             btnLoginRegister.TabIndex = 40;
             btnLoginRegister.Text = "Register";
             btnLoginRegister.UseVisualStyleBackColor = false;
+            btnLoginRegister.Click += btnLoginRegister_Click;
             // 
             // Login
             // 
