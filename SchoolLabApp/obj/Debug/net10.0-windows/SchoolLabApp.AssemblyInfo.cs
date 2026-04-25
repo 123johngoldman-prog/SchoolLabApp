@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4975dc2f5f25ad51c9f51114b38f6cc24db6e165")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8c9f2825f66ecd45e706a073c2fea4e759cbe8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
