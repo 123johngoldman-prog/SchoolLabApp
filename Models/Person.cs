@@ -12,6 +12,6 @@ namespace SchoolLabApp.Models
 
         public string Type { get; set; }
 
-        public Loan loan { get; set; } = new Loan();
+        public ICollection<Loan> Loans { get; set; }
     }
 }
