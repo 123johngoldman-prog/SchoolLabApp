@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj": {}
+    "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj": {
+    "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
+        "projectUniqueName": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
         "projectName": "SchoolLabApp",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\obj\\",
+        "projectPath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
+        "packagesPath": "C:\\Users\\vlado\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vlado\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -29,7 +29,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0-windows7.0": {
+          "net10.0-windows": {
+            "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {}
           }
@@ -47,7 +48,8 @@
         "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
-        "net10.0-windows7.0": {
+        "net10.0-windows": {
+          "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
