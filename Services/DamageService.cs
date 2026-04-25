@@ -9,7 +9,7 @@ using SchoolLabApp.Repositories;
 
 namespace SchoolLabApp.Services
 {
-    public class DamageService : IDamageRepository
+    public class DamageService : IDamageRepository<Damage>
     {
         private readonly SchoolLabAppDbContext _context;
 

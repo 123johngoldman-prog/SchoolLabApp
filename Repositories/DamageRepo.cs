@@ -6,7 +6,7 @@ using SchoolLabApp.Models;
 
 namespace SchoolLabApp.Repositories
 {
-    public interface IDamageRepository
+    public interface IDamageRepository<T>:IBaseRepo<T> where T : class 
     {
         Task<IEnumerable<Damage>> GetAllAsync();
         Task<Damage?> GetByIdAsync(int id);

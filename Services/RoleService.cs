@@ -9,7 +9,7 @@ using SchoolLabApp.Repositories;
 
 namespace SchoolLabApp.Services
 {
-    public class RoleService : IRoleRepository
+    public class RoleService : IRoleRepository<Role>
     {
         private readonly SchoolLabAppDbContext _context;
 

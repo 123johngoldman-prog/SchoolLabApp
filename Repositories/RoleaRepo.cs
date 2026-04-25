@@ -5,7 +5,7 @@ using SchoolLabApp.Models;
 
 namespace SchoolLabApp.Repositories
 {
-    public interface IRoleRepository
+    public interface IRoleRepository<T>: IBaseRepo<T> where T : class
     {
         Task<IEnumerable<Role>> GetAllAsync();
         Task<Role?> GetByIdAsync(int id);
