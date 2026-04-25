@@ -25,11 +25,13 @@ namespace SchoolLabApp.View
             if (checkBoxRegister.Checked)
             {
                 txtRegisterPassword.UseSystemPasswordChar = false;
+                txtRegisterPasswordConfirm.UseSystemPasswordChar = false;
 
             }
             else
             {
                 txtRegisterPassword.UseSystemPasswordChar = true;
+                txtRegisterPasswordConfirm.UseSystemPasswordChar = true;
             }
         }
     }
