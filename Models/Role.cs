@@ -10,6 +10,6 @@ namespace SchoolLabApp.Models
 
         public string Name { get; set; }
 
-        public List<User> users { get; set; } = new List<User>();
+        public ICollection<User> Users { get; set; }
     }
 }
