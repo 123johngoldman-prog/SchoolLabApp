@@ -1,4 +1,5 @@
-﻿using SchoolLabApp.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SchoolLabApp.Data;
 using SchoolLabApp.InterfaceRepositories;
 using SchoolLabApp.Models;
 using System;
@@ -38,34 +39,56 @@ namespace SchoolLabApp.Service
             }
         }
 
-        public Task<IEnumerable<Loan>> GetActiveLoansAsync()
+        public async Task<IEnumerable<Loan>> GetActiveLoansAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Loans
+                .Where(l => l.Status.ToLower() == "active")
+                .Include(l => l.Asset)
+                .Include(l => l.Person)
+                .ToListAsync();
         }
 
-        public Task<IEnumerable<Loan>> GetAllAsync()
+        public async Task<IEnumerable<Loan>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Loans
+                .Include(l => l.Asset)
+                .Include(l => l.Person)
+                .ToListAsync();
         }
 
-        public Task<IEnumerable<Loan>> GetByAssetIdAsync(int assetId)
+        public async Task<IEnumerable<Loan>> GetByAssetIdAsync(int assetId)
         {
-            throw new NotImplementedException();
+            return await _context.Loans
+                .Where(l => l.AssetId == assetId)
+                .Include(l => l.Person)
+                .ToListAsync();
         }
 
-        public Task<Loan?> GetByIdAsync(int id)
+        public async Task<Loan?> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Loans
+                .Include(l => l.Asset)
+                .Include(l => l.Person)
+                .FirstOrDefaultAsync(l => l.Id == id);
         }
 
-        public Task<IEnumerable<Loan>> GetByPersonIdAsync(int personId)
+        public async Task<IEnumerable<Loan>> GetByPersonIdAsync(int personId)
         {
-            throw new NotImplementedException();
+            return await _context.Loans
+                .Where(l => l.PersonId == personId)
+                .Include(l => l.Asset)
+                .ToListAsync();
         }
 
-        public Task<IEnumerable<Loan>> GetOverdueLoansAsync()
+        public async Task<IEnumerable<Loan>> GetOverdueLoansAsync()
         {
-            throw new NotImplementedException();
+            {
+                return await _context.Loans
+                    .Where(l => l.Status.ToLower() == "overdue")
+                    .Include(l => l.Asset)
+                    .Include(l => l.Person)
+                    .ToListAsync();
+            }
         }
 
     }
