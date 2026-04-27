@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Models;
 using SchoolLabApp.Data;
-using SchoolLabApp.Repositories;
+using SchoolLabApp.Repositories.Interfaces;
 
 namespace SchoolLabApp.Services
 {

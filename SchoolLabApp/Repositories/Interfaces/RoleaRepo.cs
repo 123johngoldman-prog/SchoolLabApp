@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using SchoolLabApp.Models;
 
-namespace SchoolLabApp.Repositories
+namespace SchoolLabApp.Repositories.Interfaces
 {
     public interface IRoleRepository
     {

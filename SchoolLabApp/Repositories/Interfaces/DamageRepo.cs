@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
 using SchoolLabApp.Models;
 
-namespace SchoolLabApp.Repositories
+namespace SchoolLabApp.Repositories.Interfaces
 {
     public interface IDamageRepository
     {
