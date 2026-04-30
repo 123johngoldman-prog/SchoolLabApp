@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Data;
 using SchoolLabApp.Repositories.Interfaces;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace SchoolLabApp.Repositories.Implementations
 {
@@ -17,35 +15,31 @@ namespace SchoolLabApp.Repositories.Implementations
             _dbSet = context.Set<T>();
         }
 
-        public async Task<List<T>> GetAllAsync()
-        {
-            return await _dbSet.ToListAsync();
-        }
+        public async Task<IEnumerable<T>> GetAllAsync()
+            => await _dbSet.ToListAsync();
 
         public async Task<T?> GetByIdAsync(int id)
-        {
-            return await _dbSet.FindAsync(id);
-        }
+            => await _dbSet.FindAsync(id);
 
         public async Task AddAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
             _dbSet.Update(entity);
-            return Task.CompletedTask;
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
         {
             var entity = await GetByIdAsync(id);
+            if (entity == null) return;
 
-            if (entity != null)
-            {
-                _dbSet.Remove(entity);
-            }
+            _dbSet.Remove(entity);
+            await _context.SaveChangesAsync();
         }
     }
 }
