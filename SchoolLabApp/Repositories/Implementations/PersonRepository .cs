@@ -2,30 +2,17 @@
 using SchoolLabApp.Data;
 using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Interfaces;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SchoolLabApp.Repositories.Implementations
 {
     public class PersonRepository : GenericRepository<Person>, IPersonRepository
     {
-        public PersonRepository(SchoolLabAppDbContext context)
-            : base(context)
-        {
-        }
+        public PersonRepository(SchoolLabAppDbContext context) : base(context) { }
 
-        public async Task<List<Person>> GetStudentsAsync()
+        public async Task<IEnumerable<Person>> GetByTypeAsync(string type)
         {
             return await _dbSet
-                .Where(p => p.Type == "Student")
-                .ToListAsync();
-        }
-
-        public async Task<List<Person>> GetTeachersAsync()
-        {
-            return await _dbSet
-                .Where(p => p.Type == "Teacher")
+                .Where(p => p.Type == type)
                 .ToListAsync();
         }
     }
