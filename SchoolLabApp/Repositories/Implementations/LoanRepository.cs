@@ -39,10 +39,10 @@ namespace SchoolLabApp.Repositories.Implementations
             }
         }
 
-        public async Task<IEnumerable<Loan>> GetActiveLoansAsync()
+        public async Task<IEnumerable<Loan>> GetLoansByStatusAsync(string status)
         {
             return await _context.Loans
-                .Where(l => l.Status.ToLower() == "active")
+                .Where(l => l.Status.ToLower() == status)
                 .Include(l => l.Asset)
                 .Include(l => l.Person)
                 .ToListAsync();

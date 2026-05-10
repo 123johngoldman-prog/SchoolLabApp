@@ -10,7 +10,7 @@ namespace SchoolLabApp.Repositories.Interfaces
 
         Task<IEnumerable<T>> GetByPersonIdAsync(int personId);
 
-        Task<IEnumerable<T>> GetActiveLoansAsync();
+        Task<IEnumerable<T>> GetLoansByStatusAsync(string status);
 
         Task<IEnumerable<T>> GetOverdueLoansAsync();
     }

@@ -79,11 +79,36 @@ namespace SchoolLabApp.Services
         
         public async Task<IEnumerable<Asset>> GetStatus(string status)
         {
-            return await _assetRepository.GetByStatusAsync(status);
+            try
+            {
+                if (string.IsNullOrWhiteSpace(status))
+                {
+                    throw new Exception("Must enter status");
+                }
+                if (status.ToLower() != "active"
+                        && status.ToLower() != "unactive"
+                        && status.ToLower() != "borken")
+                {
+                    throw new Exception("Status doesnt exsist");
+                }
+
+                return await _assetRepository.GetByStatusAsync(status);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return Enumerable.Empty<Asset>();
+            }
         }
+
         public async Task<IEnumerable<Asset>> GetAll()
         {
             return await _assetRepository.GetAllAsync();
+        }
+
+        public async Task<IEnumerable<Asset>> GetByCategory(int id)
+        {
+            return await _assetRepository.GetByCategoryIdAsync(id);
         }
     }
 }
