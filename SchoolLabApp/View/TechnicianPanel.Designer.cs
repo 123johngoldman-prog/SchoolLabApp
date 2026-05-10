@@ -157,6 +157,7 @@
             btnTechnicianPanelDelete.TabIndex = 35;
             btnTechnicianPanelDelete.Text = "Delete";
             btnTechnicianPanelDelete.UseVisualStyleBackColor = false;
+            btnTechnicianPanelDelete.Click += btnTechnicianPanelDelete_Click;
             // 
             // btnTechnicianPanelEdit
             // 
@@ -168,6 +169,7 @@
             btnTechnicianPanelEdit.TabIndex = 34;
             btnTechnicianPanelEdit.Text = "Edit";
             btnTechnicianPanelEdit.UseVisualStyleBackColor = false;
+            btnTechnicianPanelEdit.Click += btnTechnicianPanelEdit_Click;
             // 
             // btnTechnicianPanelAdd
             // 
@@ -179,6 +181,7 @@
             btnTechnicianPanelAdd.TabIndex = 33;
             btnTechnicianPanelAdd.Text = "Add";
             btnTechnicianPanelAdd.UseVisualStyleBackColor = false;
+            btnTechnicianPanelAdd.Click += btnTechnicianPanelAdd_Click;
             // 
             // btnTechnicianPanelReportPanel
             // 
@@ -193,6 +196,7 @@
             btnTechnicianPanelReportPanel.TabIndex = 32;
             btnTechnicianPanelReportPanel.Text = "Report Panel";
             btnTechnicianPanelReportPanel.UseVisualStyleBackColor = false;
+            btnTechnicianPanelReportPanel.Click += btnTechnicianPanelReportPanel_Click;
             // 
             // TechnicianPanel
             // 

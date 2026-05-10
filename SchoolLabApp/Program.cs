@@ -1,3 +1,6 @@
+using SchoolLabApp.Data;
+using SchoolLabApp.Repositories.Implementations;
+using SchoolLabApp.Services;
 using SchoolLabApp.View;
 
 namespace SchoolLabApp
@@ -13,9 +16,15 @@ namespace SchoolLabApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            var context = new SchoolLabAppDbContext();
 
-            
+            var assetRepository = new AssetRepository(context);
+
+            var assetService = new AssetService(assetRepository);
+
+            Application.Run(new TechnicianPanel(assetService));
+
+
         }
 
 
