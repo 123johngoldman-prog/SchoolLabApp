@@ -195,6 +195,7 @@
             btnTechnicianPanelReportPanel.TabIndex = 32;
             btnTechnicianPanelReportPanel.Text = "Report Panel";
             btnTechnicianPanelReportPanel.UseVisualStyleBackColor = false;
+            btnTechnicianPanelReportPanel.Click += btnTechnicianPanelReportPanel_Click;
             // 
             // TechnicianPanel
             // 

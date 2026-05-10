@@ -29,8 +29,17 @@ namespace SchoolLabApp.View
             MessageBox.Show("Asset added successfully !");
         }
 
-        private async Task btnTechnicianPanelDelete_Click(object sender, EventArgs e)
+        private async void btnTechnicianPanelDelete_Click(object sender, EventArgs e)
         {
+            int id = listBoxTechnicianPanel.SelectedIndex;
+
+            await _assetService.DeleteAsset(id);
+        }
+
+        private void btnTechnicianPanelReportPanel_Click(object sender, EventArgs e)
+        {
+            var reportPanel = new ReportPanel();
+            reportPanel.ShowDialog();
         }
     }
 }
