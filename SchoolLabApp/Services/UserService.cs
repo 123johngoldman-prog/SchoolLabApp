@@ -1,36 +1,136 @@
 ﻿using SchoolLabApp.Models;
-using SchoolLabApp.Repositories.Interfaces;
+using SchoolLabApp.Repositories.Implementations;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SchoolLabApp.Services
 {
     public class UserService
     {
-        private readonly IUserRepository _userRepo;
+        private readonly UserRepository _userRepository;
 
-        public UserService(IUserRepository userRepo)
+        public UserService(UserRepository userRepository)
         {
-            _userRepo = userRepo;
+            _userRepository = userRepository;
         }
 
-        public async Task<User?> LoginAsync(string username, string password)
+        public async Task<bool> Register(User user)
         {
-            return await _userRepo.LoginAsync(username, password);
-        }
+            try
+            {
+                if (user == null)
+                {
+                    throw new Exception("User is null");
+                }
 
-        public async Task<bool> RegisterAsync(User user)
-        {
-            var existing = await _userRepo.GetByUsernameAsync(user.Username);
+                if (string.IsNullOrWhiteSpace(user.Username))
+                {
+                    throw new Exception("Username is required");
+                }
 
-            if (existing != null)
+                if (string.IsNullOrWhiteSpace(user.Password))
+                {
+                    throw new Exception("Password is required");
+                }
+
+                var existingUser = await _userRepository.GetByUsernameAsync(user.Username);
+
+                if (existingUser != null)
+                {
+                    throw new Exception("Username already exists");
+                }
+
+                await _userRepository.AddAsync(user);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
                 return false;
-
-            await _userRepo.AddAsync(user);
-            return true;
+            }
         }
 
-        public async Task<IEnumerable<User>> GetAllAsync()
+        public async Task<User?> Login(string username, string password)
         {
-            return await _userRepo.GetAllAsync();
+            try
+            {
+                if (string.IsNullOrWhiteSpace(username))
+                {
+                    throw new Exception("Username is required");
+                }
+
+                if (string.IsNullOrWhiteSpace(password))
+                {
+                    throw new Exception("Password is required");
+                }
+
+                var user = await _userRepository.LoginAsync(username, password);
+
+                if (user == null)
+                {
+                    throw new Exception("Invalid username or password");
+                }
+
+                return user;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public async Task<IEnumerable<User>> GetAllUsers()
+        {
+            try
+            {
+                return await _userRepository.GetAllAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new List<User>();
+            }
+        }
+
+        public async Task UpdateUser(User user)
+        {
+            try
+            {
+                var existingUser = await _userRepository.GetByIdAsync(user.Id);
+
+                if (existingUser == null)
+                {
+                    throw new Exception("User not found");
+                }
+
+                await _userRepository.UpdateAsync(user);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public async Task DeleteUser(int id)
+        {
+            try
+            {
+                var existingUser = await _userRepository.GetByIdAsync(id);
+
+                if (existingUser == null)
+                {
+                    throw new Exception("User not found");
+                }
+
+                await _userRepository.DeleteAsync(id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
