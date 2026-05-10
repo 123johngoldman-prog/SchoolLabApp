@@ -11,6 +11,11 @@ namespace SchoolLabApp.Services
     {
         private readonly CategoryRepository _categoryRepository;
 
+        public async Task<IEnumerable<Category>> GetAll()
+        {
+            return await _categoryRepository.GetAllAsync();
+        }
+
         public CategoryService(CategoryRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;

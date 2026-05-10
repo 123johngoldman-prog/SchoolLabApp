@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\implementations\\damagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\implementations\\damagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\implementations\\damagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\implementations\\damagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -96,11 +96,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 261,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DamageRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Implementations\\DamageRepository.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Implementations\\DamageRepository.cs",
@@ -113,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
@@ -134,8 +134,7 @@
               "RelativeToolTip": "SchoolLabApp\\Services\\RoleService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T15:34:17.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T15:34:17.298Z"
             },
             {
               "$type": "Document",
@@ -159,8 +158,7 @@
               "RelativeToolTip": "SchoolLabApp\\Services\\UserService.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAiwBEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T15:48:12.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T15:48:12.396Z"
             },
             {
               "$type": "Document",
@@ -232,8 +230,7 @@
               "RelativeToolTip": "SchoolLabApp\\Services\\DamageService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T17:28:29.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T17:28:29.399Z"
             },
             {
               "$type": "Document",
