@@ -35,6 +35,11 @@ namespace SchoolLabApp.Services
             catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
+                MessageBox.Show(
+                    ex.Message,
+                    "Name is required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -54,6 +59,11 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                MessageBox.Show(
+                    ex.Message,
+                    "Category not found",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -73,6 +83,11 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                MessageBox.Show(
+                    ex.Message,
+                    "Category not found",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
     }

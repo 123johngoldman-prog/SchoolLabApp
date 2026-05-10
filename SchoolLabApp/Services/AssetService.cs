@@ -37,6 +37,12 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
+                MessageBox.Show(
+                    ex.Message,
+                    "Name is required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
         public async Task UpdateAsset(Asset asset)
@@ -55,6 +61,13 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
+                MessageBox.Show(
+                    ex.Message,
+                    "Asset not found",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
             }
         }
 
@@ -74,6 +87,11 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                MessageBox.Show(
+                    ex.Message,
+                    "Asset not found",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
         
@@ -97,6 +115,11 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                MessageBox.Show(
+                    ex.Message,
+                    "Status error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
                 return Enumerable.Empty<Asset>();
             }
         }

@@ -33,6 +33,12 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
+                MessageBox.Show(
+                    ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -52,6 +58,12 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
+                MessageBox.Show(
+                    ex.Message,
+                    "Loan not found",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -71,6 +83,11 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                MessageBox.Show(
+                    ex.Message,
+                    "Loan not found",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -95,6 +112,13 @@ namespace SchoolLabApp.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
+                MessageBox.Show(
+                    ex.Message,
+                    "Invalid Status",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
                 return Enumerable.Empty<Loan>();
             }
         }
