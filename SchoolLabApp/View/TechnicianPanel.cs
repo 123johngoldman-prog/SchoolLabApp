@@ -20,10 +20,25 @@ namespace SchoolLabApp.View
 
         private async void btnTechnicianPanelAdd_Click(object sender, EventArgs e)
         {
-            int categoryId = comboBoxTechnicianPanelCategory.SelectedIndex;
+            int categoryId = (int)comboBoxTechnicianPanelCategory.SelectedValue;
+
+            string status = string.Empty;
+
+            if (radioButtonTechnicianPanelStatusAvelible.Checked)
+            {
+                status = radioButtonTechnicianPanelStatusAvelible.Text;
+            }
+            else if (radioButtonTechnicianPanelStatusUnavelible.Checked)
+            {
+                status = radioButtonTechnicianPanelStatusUnavelible.Text;
+            }
+            else if (radioButtonTechnicianPanelStatusBroken.Checked)
+            {
+                status = radioButtonTechnicianPanelStatusBroken.Text;
+            }
 
             await _assetService.AddAssets(txtTechnicianPanelName.Text,
-                                    comboBoxTechnicianPanelCategory.Text,
+                                    status,
                                     categoryId);
 
             MessageBox.Show("Asset added successfully !");

@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             comboBoxTechnicianPanelCategory = new ComboBox();
-            label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             listBoxTechnicianPanel = new ListBox();
             txtTechnicianPanelDescription = new TextBox();
             txtTechnicianPanelName = new TextBox();
-            radioButtonTechnicianPanelStatusAvelible = new RadioButton();
-            radioButtonTechnicianPanelStatusUnavelible = new RadioButton();
-            radioButtonTechnicianPanelStatusBroken = new RadioButton();
             btnTechnicianPanelDelete = new Button();
             btnTechnicianPanelEdit = new Button();
             btnTechnicianPanelAdd = new Button();
             btnTechnicianPanelReportPanel = new Button();
+            groupStatus = new GroupBox();
+            radioButtonTechnicianPanelStatusBroken = new RadioButton();
+            radioButtonTechnicianPanelStatusUnavelible = new RadioButton();
+            radioButtonTechnicianPanelStatusAvelible = new RadioButton();
+            groupStatus.SuspendLayout();
             SuspendLayout();
             // 
             // comboBoxTechnicianPanelCategory
@@ -53,15 +54,6 @@
             comboBoxTechnicianPanelCategory.Name = "comboBoxTechnicianPanelCategory";
             comboBoxTechnicianPanelCategory.Size = new Size(199, 23);
             comboBoxTechnicianPanelCategory.TabIndex = 28;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(27, 229);
-            label4.Name = "label4";
-            label4.Size = new Size(39, 15);
-            label4.TabIndex = 27;
-            label4.Text = "Status";
             // 
             // label3
             // 
@@ -114,39 +106,6 @@
             txtTechnicianPanelName.Size = new Size(199, 23);
             txtTechnicianPanelName.TabIndex = 16;
             // 
-            // radioButtonTechnicianPanelStatusAvelible
-            // 
-            radioButtonTechnicianPanelStatusAvelible.AutoSize = true;
-            radioButtonTechnicianPanelStatusAvelible.Location = new Point(36, 256);
-            radioButtonTechnicianPanelStatusAvelible.Name = "radioButtonTechnicianPanelStatusAvelible";
-            radioButtonTechnicianPanelStatusAvelible.Size = new Size(67, 19);
-            radioButtonTechnicianPanelStatusAvelible.TabIndex = 29;
-            radioButtonTechnicianPanelStatusAvelible.TabStop = true;
-            radioButtonTechnicianPanelStatusAvelible.Text = "Avelible";
-            radioButtonTechnicianPanelStatusAvelible.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonTechnicianPanelStatusUnavelible
-            // 
-            radioButtonTechnicianPanelStatusUnavelible.AutoSize = true;
-            radioButtonTechnicianPanelStatusUnavelible.Location = new Point(36, 281);
-            radioButtonTechnicianPanelStatusUnavelible.Name = "radioButtonTechnicianPanelStatusUnavelible";
-            radioButtonTechnicianPanelStatusUnavelible.Size = new Size(80, 19);
-            radioButtonTechnicianPanelStatusUnavelible.TabIndex = 30;
-            radioButtonTechnicianPanelStatusUnavelible.TabStop = true;
-            radioButtonTechnicianPanelStatusUnavelible.Text = "Unavelible";
-            radioButtonTechnicianPanelStatusUnavelible.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonTechnicianPanelStatusBroken
-            // 
-            radioButtonTechnicianPanelStatusBroken.AutoSize = true;
-            radioButtonTechnicianPanelStatusBroken.Location = new Point(36, 306);
-            radioButtonTechnicianPanelStatusBroken.Name = "radioButtonTechnicianPanelStatusBroken";
-            radioButtonTechnicianPanelStatusBroken.Size = new Size(62, 19);
-            radioButtonTechnicianPanelStatusBroken.TabIndex = 31;
-            radioButtonTechnicianPanelStatusBroken.TabStop = true;
-            radioButtonTechnicianPanelStatusBroken.Text = "Broken";
-            radioButtonTechnicianPanelStatusBroken.UseVisualStyleBackColor = true;
-            // 
             // btnTechnicianPanelDelete
             // 
             btnTechnicianPanelDelete.BackColor = Color.OrangeRed;
@@ -198,21 +157,63 @@
             btnTechnicianPanelReportPanel.UseVisualStyleBackColor = false;
             btnTechnicianPanelReportPanel.Click += btnTechnicianPanelReportPanel_Click;
             // 
+            // groupStatus
+            // 
+            groupStatus.Controls.Add(radioButtonTechnicianPanelStatusBroken);
+            groupStatus.Controls.Add(radioButtonTechnicianPanelStatusUnavelible);
+            groupStatus.Controls.Add(radioButtonTechnicianPanelStatusAvelible);
+            groupStatus.Location = new Point(26, 235);
+            groupStatus.Name = "groupStatus";
+            groupStatus.Size = new Size(171, 119);
+            groupStatus.TabIndex = 36;
+            groupStatus.TabStop = false;
+            groupStatus.Text = "Status";
+            // 
+            // radioButtonTechnicianPanelStatusBroken
+            // 
+            radioButtonTechnicianPanelStatusBroken.AutoSize = true;
+            radioButtonTechnicianPanelStatusBroken.Location = new Point(6, 69);
+            radioButtonTechnicianPanelStatusBroken.Name = "radioButtonTechnicianPanelStatusBroken";
+            radioButtonTechnicianPanelStatusBroken.Size = new Size(62, 19);
+            radioButtonTechnicianPanelStatusBroken.TabIndex = 34;
+            radioButtonTechnicianPanelStatusBroken.TabStop = true;
+            radioButtonTechnicianPanelStatusBroken.Text = "Broken";
+            radioButtonTechnicianPanelStatusBroken.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonTechnicianPanelStatusUnavelible
+            // 
+            radioButtonTechnicianPanelStatusUnavelible.AutoSize = true;
+            radioButtonTechnicianPanelStatusUnavelible.Location = new Point(6, 44);
+            radioButtonTechnicianPanelStatusUnavelible.Name = "radioButtonTechnicianPanelStatusUnavelible";
+            radioButtonTechnicianPanelStatusUnavelible.Size = new Size(80, 19);
+            radioButtonTechnicianPanelStatusUnavelible.TabIndex = 33;
+            radioButtonTechnicianPanelStatusUnavelible.TabStop = true;
+            radioButtonTechnicianPanelStatusUnavelible.Text = "Unavelible";
+            radioButtonTechnicianPanelStatusUnavelible.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonTechnicianPanelStatusAvelible
+            // 
+            radioButtonTechnicianPanelStatusAvelible.AutoSize = true;
+            radioButtonTechnicianPanelStatusAvelible.Location = new Point(6, 19);
+            radioButtonTechnicianPanelStatusAvelible.Name = "radioButtonTechnicianPanelStatusAvelible";
+            radioButtonTechnicianPanelStatusAvelible.Size = new Size(67, 19);
+            radioButtonTechnicianPanelStatusAvelible.TabIndex = 32;
+            radioButtonTechnicianPanelStatusAvelible.TabStop = true;
+            radioButtonTechnicianPanelStatusAvelible.Text = "Avelible";
+            radioButtonTechnicianPanelStatusAvelible.UseVisualStyleBackColor = true;
+            // 
             // TechnicianPanel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(groupStatus);
             Controls.Add(btnTechnicianPanelDelete);
             Controls.Add(btnTechnicianPanelEdit);
             Controls.Add(btnTechnicianPanelAdd);
             Controls.Add(btnTechnicianPanelReportPanel);
-            Controls.Add(radioButtonTechnicianPanelStatusBroken);
-            Controls.Add(radioButtonTechnicianPanelStatusUnavelible);
-            Controls.Add(radioButtonTechnicianPanelStatusAvelible);
             Controls.Add(comboBoxTechnicianPanelCategory);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -221,6 +222,8 @@
             Controls.Add(txtTechnicianPanelName);
             Name = "TechnicianPanel";
             Text = "TechnicianPanel";
+            groupStatus.ResumeLayout(false);
+            groupStatus.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -228,19 +231,19 @@
         #endregion
 
         private ComboBox comboBoxTechnicianPanelCategory;
-        private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
         private ListBox listBoxTechnicianPanel;
         private TextBox txtTechnicianPanelDescription;
         private TextBox txtTechnicianPanelName;
-        private RadioButton radioButtonTechnicianPanelStatusAvelible;
-        private RadioButton radioButtonTechnicianPanelStatusUnavelible;
-        private RadioButton radioButtonTechnicianPanelStatusBroken;
         private Button btnTechnicianPanelDelete;
         private Button btnTechnicianPanelEdit;
         private Button btnTechnicianPanelAdd;
         private Button btnTechnicianPanelReportPanel;
+        private GroupBox groupStatus;
+        private RadioButton radioButtonTechnicianPanelStatusBroken;
+        private RadioButton radioButtonTechnicianPanelStatusUnavelible;
+        private RadioButton radioButtonTechnicianPanelStatusAvelible;
     }
 }
