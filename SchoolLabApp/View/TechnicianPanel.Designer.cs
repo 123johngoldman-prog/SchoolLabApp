@@ -157,6 +157,7 @@
             btnTechnicianPanelDelete.TabIndex = 35;
             btnTechnicianPanelDelete.Text = "Delete";
             btnTechnicianPanelDelete.UseVisualStyleBackColor = false;
+            btnTechnicianPanelDelete.Click += btnTechnicianPanelDelete_Click;
             // 
             // btnTechnicianPanelEdit
             // 
@@ -179,6 +180,7 @@
             btnTechnicianPanelAdd.TabIndex = 33;
             btnTechnicianPanelAdd.Text = "Add";
             btnTechnicianPanelAdd.UseVisualStyleBackColor = false;
+            btnTechnicianPanelAdd.Click += btnTechnicianPanelAdd_Click;
             // 
             // btnTechnicianPanelReportPanel
             // 

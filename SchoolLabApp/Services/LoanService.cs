@@ -83,8 +83,8 @@ namespace SchoolLabApp.Services
                     throw new Exception("Must enter status");
                 }
                 if (status.ToLower() != "active"
-                        && status.ToLower() != "unactive"
-                        && status.ToLower() != "borken")
+                    && status.ToLower() != "unactive"
+                    && status.ToLower() != "borken")
                 {
                     throw new Exception("Status doesnt exsist");
                 }
