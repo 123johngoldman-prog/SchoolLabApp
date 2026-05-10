@@ -41,5 +41,10 @@ namespace SchoolLabApp.View
             var reportPanel = new ReportPanel();
             reportPanel.ShowDialog();
         }
+
+        private void btnTechnicianPanelEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

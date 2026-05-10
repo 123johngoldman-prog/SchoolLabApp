@@ -169,6 +169,7 @@
             btnTechnicianPanelEdit.TabIndex = 34;
             btnTechnicianPanelEdit.Text = "Edit";
             btnTechnicianPanelEdit.UseVisualStyleBackColor = false;
+            btnTechnicianPanelEdit.Click += btnTechnicianPanelEdit_Click;
             // 
             // btnTechnicianPanelAdd
             // 
