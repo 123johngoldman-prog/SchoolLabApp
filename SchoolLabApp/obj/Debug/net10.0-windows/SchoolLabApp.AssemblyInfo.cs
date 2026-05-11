@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f0449a776f30296f7be508fb153704e2b8a4f7e")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d82c606683f4b253643b2e9c16f7681f1cbce2a3")]
->>>>>>> origin/Ventsi-branch
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dc20a7b3437cd164acca3de2f5ed0e120e57e75")]
 [assembly: System.Reflection.AssemblyProductAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
