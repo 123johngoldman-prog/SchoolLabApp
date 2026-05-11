@@ -6,16 +6,23 @@ using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Models;
 using SchoolLabApp.Data;
 using SchoolLabApp.Repositories.Interfaces;
+using SchoolLabApp.Repositories.Implementations;
 
 namespace SchoolLabApp.Services
 {
     public class RoleService : IRoleRepository
     {
         private readonly SchoolLabAppDbContext _context;
+        private RoleRepository roleRepository;
 
         public RoleService(SchoolLabAppDbContext context)
         {
             _context = context;
+        }
+
+        public RoleService(RoleRepository roleRepository)
+        {
+            this.roleRepository = roleRepository;
         }
 
         public async Task<IEnumerable<Role>> GetAllAsync()

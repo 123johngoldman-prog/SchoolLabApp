@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class TechnicianPanel
     {
@@ -221,6 +221,7 @@
             Controls.Add(txtTechnicianPanelName);
             Name = "TechnicianPanel";
             Text = "TechnicianPanel";
+            Load += TechnicianPanel_Load;
             ResumeLayout(false);
             PerformLayout();
         }

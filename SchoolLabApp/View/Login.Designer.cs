@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class Login
     {
@@ -103,6 +103,7 @@
             btnLoginLogin.TabIndex = 39;
             btnLoginLogin.Text = "Log in";
             btnLoginLogin.UseVisualStyleBackColor = false;
+            btnLoginLogin.Click += btnLoginLogin_Click;
             // 
             // btnLoginRegister
             // 

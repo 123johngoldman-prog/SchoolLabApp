@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic.ApplicationServices;
+using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Models;
 using System;
 using System.Collections.Generic;

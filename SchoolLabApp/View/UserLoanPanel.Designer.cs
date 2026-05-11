@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class UserLoanPanel
     {
@@ -85,6 +85,7 @@
             btnUserLoanPanelReport.TabIndex = 19;
             btnUserLoanPanelReport.Text = "Report";
             btnUserLoanPanelReport.UseVisualStyleBackColor = false;
+            btnUserLoanPanelReport.Click += btnUserLoanPanelReport_Click;
             // 
             // txtUserLoanPanelDuration
             // 
@@ -103,6 +104,7 @@
             btnUserLoanPanelTake.TabIndex = 29;
             btnUserLoanPanelTake.Text = "Take";
             btnUserLoanPanelTake.UseVisualStyleBackColor = false;
+            btnUserLoanPanelTake.Click += btnUserLoanPanelTake_Click;
             // 
             // btnUserLoanPanelReturn
             // 
@@ -114,6 +116,7 @@
             btnUserLoanPanelReturn.TabIndex = 30;
             btnUserLoanPanelReturn.Text = "Return";
             btnUserLoanPanelReturn.UseVisualStyleBackColor = false;
+            btnUserLoanPanelReturn.Click += btnUserLoanPanelReturn_Click;
             // 
             // UserLoanPanel
             // 
@@ -131,6 +134,7 @@
             Controls.Add(txtUserLoanPanelDuration);
             Name = "UserLoanPanel";
             Text = "UserLoanPanel";
+            Load += UserLoanPanel_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class TechnicianPasswordPanel
     {
@@ -55,6 +55,7 @@
             btnTechnicianPasswordPanelRegister.TabIndex = 33;
             btnTechnicianPasswordPanelRegister.Text = "Register";
             btnTechnicianPasswordPanelRegister.UseVisualStyleBackColor = false;
+            btnTechnicianPasswordPanelRegister.Click += btnTechnicianPasswordPanelRegister_Click;
             // 
             // checkBoxTechnicianPasswordPanel
             // 
@@ -64,6 +65,7 @@
             checkBoxTechnicianPasswordPanel.Size = new Size(15, 14);
             checkBoxTechnicianPasswordPanel.TabIndex = 34;
             checkBoxTechnicianPasswordPanel.UseVisualStyleBackColor = true;
+            checkBoxTechnicianPasswordPanel.CheckedChanged += checkBoxTechnicianPasswordPanel_CheckedChanged;
             // 
             // label1
             // 
