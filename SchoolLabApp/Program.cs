@@ -17,13 +17,12 @@ namespace SchoolLabApp
 
             // Repositories
             var userRepository = new UserRepository(context);
-            var roleRepository = new RoleRepository(context);
 
             // Services
             var userService = new UserService(userRepository);
-            var roleService = new RoleService(roleRepository);
+            var roleService = new RoleService(context);
 
-            // Start Register Form
+            // Run Register Form
             Application.Run(new Register(userService, roleService));
         }
     }
