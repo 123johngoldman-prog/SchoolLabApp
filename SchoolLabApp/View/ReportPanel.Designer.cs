@@ -36,7 +36,7 @@ namespace SchoolLabApp.View
             // 
             // listBoxReportPanel
             // 
-            listBoxReportPanel.ForeColor = SystemColors.MenuBar;
+            listBoxReportPanel.ForeColor = SystemColors.MenuText;
             listBoxReportPanel.FormattingEnabled = true;
             listBoxReportPanel.Location = new Point(12, 12);
             listBoxReportPanel.Name = "listBoxReportPanel";

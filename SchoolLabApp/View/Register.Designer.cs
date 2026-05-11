@@ -102,7 +102,6 @@ namespace SchoolLabApp.View
             label6.Size = new Size(60, 15);
             label6.TabIndex = 47;
             label6.Text = "Username";
-
             // 
             // txtRegisterUsername
             // 
@@ -114,6 +113,7 @@ namespace SchoolLabApp.View
             // comboBoxRegisterRole
             // 
             comboBoxRegisterRole.FormattingEnabled = true;
+            comboBoxRegisterRole.Items.AddRange(new object[] { "Student", "Teacher", "Technician" });
             comboBoxRegisterRole.Location = new Point(77, 430);
             comboBoxRegisterRole.Name = "comboBoxRegisterRole";
             comboBoxRegisterRole.Size = new Size(199, 23);
