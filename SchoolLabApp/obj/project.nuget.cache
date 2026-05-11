@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MExdbR/JCmE=",
+  "dgSpecHash": "h2xHHKRzVeQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
   "expectedPackageFiles": [
@@ -57,15 +57,5 @@
     "C:\\Users\\vlado\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.7.1\\system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512",
     "C:\\Users\\vlado\\.nuget\\packages\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

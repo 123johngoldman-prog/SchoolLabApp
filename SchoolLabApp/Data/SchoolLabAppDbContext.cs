@@ -1,8 +1,11 @@
-using Microsoft.EntityFrameworkCore;
-using SchoolLabApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
+using SchoolLabApp.Models;
+using static System.Net.WebRequestMethods;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace SchoolLabApp.Data
 {
@@ -20,7 +23,7 @@ namespace SchoolLabApp.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SchoolLabAppDb;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30");
+            optionsBuilder.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = SchoolLab; Integrated Security = True; Connect Timeout = 30; Encrypt = True; Trust Server Certificate = False; Application Intent = ReadWrite; Multi Subnet Failover = False; Command Timeout = 30");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
