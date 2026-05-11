@@ -1,9 +1,8 @@
-﻿using SchoolLabApp.Models;
+using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Implementations;
-using SchoolLabApp.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace SchoolLabApp.Services
 {
@@ -12,91 +11,47 @@ namespace SchoolLabApp.Services
         private readonly LoanRepository _loanRepository;
 
         public LoanService(LoanRepository loanRepository)
+            => _loanRepository = loanRepository;
+
+        public async Task AddLoan(int assetId, int personId, string status)
         {
-            _loanRepository = loanRepository;
+            var loan = new Loan
+            {
+                AssetId   = assetId,
+                PersonId  = personId,
+                StartDate = DateTime.Now,
+                Status    = status
+            };
+            await _loanRepository.AddAsync(loan);
         }
 
-        public async Task AddLoan(int AssetId, int PersonId, string status)
+        public async Task ReturnLoan(int loanId)
         {
-            try
-            {
-                Loan loan = new Loan()
-                {
-                    AssetId = AssetId,
-                    PersonId = PersonId,
-                    StartDate = DateTime.Now,
-                    Status = status
-                };
-
-                await _loanRepository.AddAsync(loan);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            var loan = await _loanRepository.GetByIdAsync(loanId)
+                ?? throw new InvalidOperationException("Loan not found.");
+            loan.Status       = "Returned";
+            loan.ReturnedDate = DateTime.Now;
+            await _loanRepository.UpdateAsync(loan);
         }
+
+        public async Task<IEnumerable<Loan>> GetLoansByPerson(int personId)
+            => await _loanRepository.GetByPersonIdAsync(personId);
+
+        public async Task<IEnumerable<Loan>> GetAll()
+            => await _loanRepository.GetAllAsync();
 
         public async Task UpdateLoan(Loan loan)
         {
-            try
-            {
-                var loans = await _loanRepository.GetByIdAsync(loan.Id);
-
-                if (loans == null)
-                {
-                    throw new Exception("Loan not found");
-                }
-
-                await _loanRepository.UpdateAsync(loan);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            if (await _loanRepository.GetByIdAsync(loan.Id) == null)
+                throw new InvalidOperationException("Loan not found.");
+            await _loanRepository.UpdateAsync(loan);
         }
 
         public async Task DeleteLoan(int id)
         {
-            try
-            {
-                var loans = await _loanRepository.GetByIdAsync(id);
-
-                if (loans == null)
-                {
-                    throw new Exception("Loan not found");
-                }
-
-                await _loanRepository.DeleteAsync(id);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-
-        public async Task<IEnumerable<Loan>> GetLoanByStatus(string status)
-        {
-            try
-            {
-                if (string.IsNullOrWhiteSpace(status))
-                {
-                    throw new Exception("Must enter status");
-                }
-                if (status.ToLower() != "active"
-                    && status.ToLower() != "unactive"
-                    && status.ToLower() != "borken")
-                {
-                    throw new Exception("Status doesnt exsist");
-                }
-
-                return await _loanRepository.GetLoansByStatusAsync(status);
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return Enumerable.Empty<Loan>();
-            }
+            if (await _loanRepository.GetByIdAsync(id) == null)
+                throw new InvalidOperationException("Loan not found.");
+            await _loanRepository.DeleteAsync(id);
         }
     }
 }

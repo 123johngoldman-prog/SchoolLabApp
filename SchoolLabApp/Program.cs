@@ -7,26 +7,19 @@ namespace SchoolLabApp
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+
             var context = new SchoolLabAppDbContext();
+            DbSeeder.Seed(context);
 
-            var assetRepository = new AssetRepository(context);
+            var userRepo    = new UserRepository(context);
+            var userService = new UserService(userRepo);
+            var roleService = new RoleService(context);
 
-            var assetService = new AssetService(assetRepository);
-
-            Application.Run(new TechnicianPanel(assetService));
-
-
+            Application.Run(new Login(userService, roleService, context));
         }
-
-
     }
 }

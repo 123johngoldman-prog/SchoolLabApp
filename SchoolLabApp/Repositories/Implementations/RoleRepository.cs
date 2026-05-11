@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Data;
 using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Interfaces;
 
-public class RoleRepository : IRoleRepository
+namespace SchoolLabApp.Repositories.Implementations
+{
+    public class RoleRepository : IRoleRepository
 {
     private readonly SchoolLabAppDbContext   _context;
 
@@ -47,5 +49,7 @@ public class RoleRepository : IRoleRepository
     public async Task<bool> ExistsAsync(int id)
     {
         return await _context.Roles.AnyAsync(r => r.Id == id);
+    }
+
     }
 }

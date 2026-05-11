@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Data;
 using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Interfaces;
@@ -19,7 +19,7 @@ namespace SchoolLabApp.Repositories.Implementations
 
         public async Task AddAsync(Loan loan)
         {
-            _context.Loans.AddAsync(loan);
+            await _context.Loans.AddAsync(loan);
             await _context.SaveChangesAsync();
         }
 
