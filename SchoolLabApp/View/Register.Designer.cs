@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class Register
     {
@@ -34,9 +34,7 @@
             label2 = new Label();
             txtRegisterPasswordConfirm = new TextBox();
             txtRegisterPassword = new TextBox();
-            label5 = new Label();
             label6 = new Label();
-            txtRegisterEmail = new TextBox();
             txtRegisterUsername = new TextBox();
             comboBoxRegisterRole = new ComboBox();
             label4 = new Label();
@@ -96,35 +94,19 @@
             txtRegisterPassword.TabIndex = 39;
             txtRegisterPassword.UseSystemPasswordChar = true;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(77, 214);
-            label5.Name = "label5";
-            label5.Size = new Size(36, 15);
-            label5.TabIndex = 48;
-            label5.Text = "Email";
-            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(77, 153);
+            label6.Location = new Point(77, 206);
             label6.Name = "label6";
             label6.Size = new Size(60, 15);
             label6.TabIndex = 47;
             label6.Text = "Username";
-            // 
-            // txtRegisterEmail
-            // 
-            txtRegisterEmail.Location = new Point(77, 232);
-            txtRegisterEmail.Multiline = true;
-            txtRegisterEmail.Name = "txtRegisterEmail";
-            txtRegisterEmail.Size = new Size(199, 23);
-            txtRegisterEmail.TabIndex = 46;
+
             // 
             // txtRegisterUsername
             // 
-            txtRegisterUsername.Location = new Point(77, 171);
+            txtRegisterUsername.Location = new Point(77, 224);
             txtRegisterUsername.Name = "txtRegisterUsername";
             txtRegisterUsername.Size = new Size(199, 23);
             txtRegisterUsername.TabIndex = 45;
@@ -132,7 +114,6 @@
             // comboBoxRegisterRole
             // 
             comboBoxRegisterRole.FormattingEnabled = true;
-            comboBoxRegisterRole.Items.AddRange(new object[] { "Student", "Teacher", "Technician" });
             comboBoxRegisterRole.Location = new Point(77, 430);
             comboBoxRegisterRole.Name = "comboBoxRegisterRole";
             comboBoxRegisterRole.Size = new Size(199, 23);
@@ -160,6 +141,7 @@
             btnRegisterRegister.TabIndex = 51;
             btnRegisterRegister.Text = "Register";
             btnRegisterRegister.UseVisualStyleBackColor = false;
+            btnRegisterRegister.Click += btnRegisterRegister_Click;
             // 
             // Register
             // 
@@ -170,9 +152,7 @@
             Controls.Add(btnRegisterRegister);
             Controls.Add(comboBoxRegisterRole);
             Controls.Add(label4);
-            Controls.Add(label5);
             Controls.Add(label6);
-            Controls.Add(txtRegisterEmail);
             Controls.Add(txtRegisterUsername);
             Controls.Add(label1);
             Controls.Add(checkBoxRegister);
@@ -195,9 +175,7 @@
         private Label label2;
         private TextBox txtRegisterPasswordConfirm;
         private TextBox txtRegisterPassword;
-        private Label label5;
         private Label label6;
-        private TextBox txtRegisterEmail;
         private TextBox txtRegisterUsername;
         private ComboBox comboBoxRegisterRole;
         private Label label4;

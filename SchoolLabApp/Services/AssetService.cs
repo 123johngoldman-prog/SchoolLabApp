@@ -1,8 +1,8 @@
-﻿using SchoolLabApp.Models;
+using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Implementations;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace SchoolLabApp.Services
 {
@@ -11,104 +11,44 @@ namespace SchoolLabApp.Services
         private readonly AssetRepository _assetRepository;
 
         public AssetService(AssetRepository assetRepository)
+            => _assetRepository = assetRepository;
+
+        public async Task AddAssets(string name, string status, int categoryId)
         {
-            _assetRepository = assetRepository;
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Asset name is required.");
+
+            var asset = new Asset
+            {
+                Name        = name,
+                Status      = status,
+                CategoryId  = categoryId,
+                CreatedDate = DateTime.Now
+            };
+            await _assetRepository.AddAsync(asset);
         }
 
-        public async Task AddAssets(string name,string status, int categoryId)
-        {
-            try
-            {
-                if (string.IsNullOrWhiteSpace(name))
-                {
-                    throw new ArgumentException("Name is required");
-                }
-
-                Asset asset = new Asset()
-                {
-                    Name = name,
-                    Status = status,
-                    CategoryId = categoryId,
-                    CreatedDate = DateTime.Now,
-                };
-
-                await _assetRepository.AddAsync(asset);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
         public async Task UpdateAsset(Asset asset)
         {
-            try
-            {
-                var assets = await _assetRepository.GetByIdAsync(asset.Id);
-
-                if (assets == null)
-                {
-                    throw new Exception("Asset not found");
-                }
-
-                await _assetRepository.UpdateAsync(asset);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            if (await _assetRepository.GetByIdAsync(asset.Id) == null)
+                throw new InvalidOperationException("Asset not found.");
+            await _assetRepository.UpdateAsync(asset);
         }
 
         public async Task DeleteAsset(int id)
         {
-            try
-            {
-                var asset = await _assetRepository.GetByIdAsync(id);
-
-                if (asset == null)
-                {
-                    throw new Exception("Asset not found");
-                }
-
-                await _assetRepository.DeleteAsync(id);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-        
-        public async Task<IEnumerable<Asset>> GetStatus(string status)
-        {
-            try
-            {
-                if (string.IsNullOrWhiteSpace(status))
-                {
-                    throw new Exception("Must enter status");
-                }
-                if (status.ToLower() != "active"
-                        && status.ToLower() != "unactive"
-                        && status.ToLower() != "borken")
-                {
-                    throw new Exception("Status doesnt exsist");
-                }
-
-                return await _assetRepository.GetByStatusAsync(status);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return Enumerable.Empty<Asset>();
-            }
+            if (await _assetRepository.GetByIdAsync(id) == null)
+                throw new InvalidOperationException("Asset not found.");
+            await _assetRepository.DeleteAsync(id);
         }
 
         public async Task<IEnumerable<Asset>> GetAll()
-        {
-            return await _assetRepository.GetAllAsync();
-        }
+            => await _assetRepository.GetAllAsync();
 
-        public async Task<IEnumerable<Asset>> GetByCategory(int id)
-        {
-            return await _assetRepository.GetByCategoryIdAsync(id);
-        }
+        public async Task<IEnumerable<Asset>> GetByCategory(int categoryId)
+            => await _assetRepository.GetByCategoryIdAsync(categoryId);
+
+        public async Task<IEnumerable<Asset>> GetByStatus(string status)
+            => await _assetRepository.GetByStatusAsync(status);
     }
 }

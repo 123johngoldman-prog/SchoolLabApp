@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Data;
 using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Interfaces;
 
-public class DamageRepository : IDamageRepository
+namespace SchoolLabApp.Repositories.Implementations
+{
+    public class DamageRepository : IDamageRepository
 {
     private readonly SchoolLabAppDbContext _context;
 
@@ -47,5 +49,7 @@ public class DamageRepository : IDamageRepository
     public async Task<bool> ExistsAsync(int id)
     {
         return await _context.Damages.AnyAsync(d => d.Id == id);
+    }
+
     }
 }

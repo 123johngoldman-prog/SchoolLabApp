@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class AdminPanel
     {
@@ -100,6 +100,7 @@
             btnAdminPanelDelete.TabIndex = 23;
             btnAdminPanelDelete.Text = "Delete";
             btnAdminPanelDelete.UseVisualStyleBackColor = false;
+            btnAdminPanelDelete.Click += btnAdminPanelDelete_Click;
             // 
             // btnAdminPanelEdit
             // 
@@ -111,6 +112,7 @@
             btnAdminPanelEdit.TabIndex = 22;
             btnAdminPanelEdit.Text = "Edit";
             btnAdminPanelEdit.UseVisualStyleBackColor = false;
+            btnAdminPanelEdit.Click += btnAdminPanelEdit_Click;
             // 
             // btnAdminPanelAdd
             // 
@@ -122,6 +124,7 @@
             btnAdminPanelAdd.TabIndex = 21;
             btnAdminPanelAdd.Text = "Add";
             btnAdminPanelAdd.UseVisualStyleBackColor = false;
+            btnAdminPanelAdd.Click += btnAdminPanelAdd_Click;
             // 
             // listBoxAdminPanel
             // 
@@ -145,6 +148,7 @@
             btnAdminPanelReportPanel.TabIndex = 19;
             btnAdminPanelReportPanel.Text = "Report Panel";
             btnAdminPanelReportPanel.UseVisualStyleBackColor = false;
+            btnAdminPanelReportPanel.Click += btnAdminPanelReportPanel_Click;
             // 
             // btnAdminPanelTechnicianPanel
             // 
@@ -156,6 +160,7 @@
             btnAdminPanelTechnicianPanel.TabIndex = 18;
             btnAdminPanelTechnicianPanel.Text = "Technician Panel";
             btnAdminPanelTechnicianPanel.UseVisualStyleBackColor = false;
+            btnAdminPanelTechnicianPanel.Click += btnAdminPanelTechnicianPanel_Click;
             // 
             // txtAdminPanelPassword
             // 
@@ -200,6 +205,7 @@
             Controls.Add(txtAdminPanelUsername);
             Name = "AdminPanel";
             Text = "AdminPanel";
+            Load += AdminPanel_Load;
             ResumeLayout(false);
             PerformLayout();
         }

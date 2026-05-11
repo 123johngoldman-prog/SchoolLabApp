@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class UserReturnPanel
     {
@@ -43,6 +43,7 @@
             btnUserReturnePanelBackToLoans.TabIndex = 30;
             btnUserReturnePanelBackToLoans.Text = "Back to loans";
             btnUserReturnePanelBackToLoans.UseVisualStyleBackColor = false;
+            btnUserReturnePanelBackToLoans.Click += btnUserReturnePanelBackToLoans_Click;
             // 
             // btnUserReturnePanelReturn
             // 
@@ -54,6 +55,7 @@
             btnUserReturnePanelReturn.TabIndex = 31;
             btnUserReturnePanelReturn.Text = "Return";
             btnUserReturnePanelReturn.UseVisualStyleBackColor = false;
+            btnUserReturnePanelReturn.Click += btnUserReturnePanelReturn_Click;
             // 
             // listBoxUserReturnPanel
             // 
@@ -75,6 +77,7 @@
             Controls.Add(btnUserReturnePanelBackToLoans);
             Name = "UserReturnPanel";
             Text = "UserReturnPanel";
+            Load += UserReturnPanel_Load;
             ResumeLayout(false);
         }
 

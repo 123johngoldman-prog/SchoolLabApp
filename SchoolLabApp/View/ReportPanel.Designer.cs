@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class ReportPanel
     {
@@ -64,6 +64,7 @@
             btnReportPanelViewReport.TabIndex = 33;
             btnReportPanelViewReport.Text = "View report";
             btnReportPanelViewReport.UseVisualStyleBackColor = false;
+            btnReportPanelViewReport.Click += btnReportPanelViewReport_Click;
             // 
             // btnReportPanelDelete
             // 
@@ -75,6 +76,7 @@
             btnReportPanelDelete.TabIndex = 36;
             btnReportPanelDelete.Text = "Delete";
             btnReportPanelDelete.UseVisualStyleBackColor = false;
+            btnReportPanelDelete.Click += btnReportPanelDelete_Click;
             // 
             // ReportPanel
             // 

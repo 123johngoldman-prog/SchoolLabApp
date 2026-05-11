@@ -3409,23 +3409,40 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\vlado\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\GamingPC\\.nuget\\packages\\": {},
+    "D:\\VisualStudio\\NuGetPackages": {}
+>>>>>>> Test
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
       "projectName": "SchoolLabApp",
       "projectPath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
       "packagesPath": "C:\\Users\\vlado\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\GamingPC\\Desktop\\ShoolLabApp\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
+      "projectName": "SchoolLabApp",
+      "projectPath": "C:\\Users\\GamingPC\\Desktop\\ShoolLabApp\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
+      "packagesPath": "C:\\Users\\GamingPC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GamingPC\\Desktop\\ShoolLabApp\\SchoolLabApp\\SchoolLabApp\\obj\\",
+>>>>>>> Test
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\VisualStudio\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\vlado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\GamingPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Test
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3434,6 +3451,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3500,7 +3518,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

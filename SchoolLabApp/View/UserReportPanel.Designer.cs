@@ -1,4 +1,4 @@
-﻿namespace SchoolLabApp.View
+namespace SchoolLabApp.View
 {
     partial class UserReportPanel
     {
@@ -51,6 +51,7 @@
             btnUserReportPanelBackToLoans.TabIndex = 31;
             btnUserReportPanelBackToLoans.Text = "Back to loans";
             btnUserReportPanelBackToLoans.UseVisualStyleBackColor = false;
+            btnUserReportPanelBackToLoans.Click += btnUserReportPanelBackToLoans_Click;
             // 
             // btnUserReportPanelSend
             // 
@@ -62,6 +63,7 @@
             btnUserReportPanelSend.TabIndex = 32;
             btnUserReportPanelSend.Text = "Send";
             btnUserReportPanelSend.UseVisualStyleBackColor = false;
+            btnUserReportPanelSend.Click += btnUserReportPanelSend_Click;
             // 
             // UserReportPanel
             // 

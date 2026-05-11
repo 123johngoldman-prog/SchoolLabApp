@@ -1,8 +1,5 @@
-﻿using SchoolLabApp.Models;
+using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Implementations;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace SchoolLabApp.Services
 {
@@ -11,126 +8,54 @@ namespace SchoolLabApp.Services
         private readonly UserRepository _userRepository;
 
         public UserService(UserRepository userRepository)
+            => _userRepository = userRepository;
+
+        // Throws on failure — callers catch ex.Message and show it via MessageBox.
+        public async Task Register(User user)
         {
-            _userRepository = userRepository;
+            if (user == null) throw new ArgumentNullException(nameof(user));
+            if (string.IsNullOrWhiteSpace(user.Username))
+                throw new ArgumentException("Username is required.");
+            if (string.IsNullOrWhiteSpace(user.Password))
+                throw new ArgumentException("Password is required.");
+            if (user.RoleId <= 0)
+                throw new ArgumentException("A valid role must be selected.");
+
+            var existing = await _userRepository.GetByUsernameAsync(user.Username);
+            if (existing != null)
+                throw new InvalidOperationException("Username already exists.");
+
+            await _userRepository.AddAsync(user);
         }
 
-        public async Task<bool> Register(User user)
+        public async Task<User> Login(string username, string password)
         {
-            try
-            {
-                if (user == null)
-                {
-                    throw new Exception("User is null");
-                }
+            if (string.IsNullOrWhiteSpace(username))
+                throw new ArgumentException("Username is required.");
+            if (string.IsNullOrWhiteSpace(password))
+                throw new ArgumentException("Password is required.");
 
-                if (string.IsNullOrWhiteSpace(user.Username))
-                {
-                    throw new Exception("Username is required");
-                }
-
-                if (string.IsNullOrWhiteSpace(user.Password))
-                {
-                    throw new Exception("Password is required");
-                }
-
-                var existingUser = await _userRepository.GetByUsernameAsync(user.Username);
-
-                if (existingUser != null)
-                {
-                    throw new Exception("Username already exists");
-                }
-
-                await _userRepository.AddAsync(user);
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return false;
-            }
-        }
-
-        public async Task<User?> Login(string username, string password)
-        {
-            try
-            {
-                if (string.IsNullOrWhiteSpace(username))
-                {
-                    throw new Exception("Username is required");
-                }
-
-                if (string.IsNullOrWhiteSpace(password))
-                {
-                    throw new Exception("Password is required");
-                }
-
-                var user = await _userRepository.LoginAsync(username, password);
-
-                if (user == null)
-                {
-                    throw new Exception("Invalid username or password");
-                }
-
-                return user;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return null;
-            }
+            var user = await _userRepository.LoginAsync(username, password);
+            if (user == null)
+                throw new InvalidOperationException("Invalid username or password.");
+            return user;
         }
 
         public async Task<IEnumerable<User>> GetAllUsers()
-        {
-            try
-            {
-                return await _userRepository.GetAllAsync();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return new List<User>();
-            }
-        }
+            => await _userRepository.GetAllAsync();
 
         public async Task UpdateUser(User user)
         {
-            try
-            {
-                var existingUser = await _userRepository.GetByIdAsync(user.Id);
-
-                if (existingUser == null)
-                {
-                    throw new Exception("User not found");
-                }
-
-                await _userRepository.UpdateAsync(user);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            if (await _userRepository.GetByIdAsync(user.Id) == null)
+                throw new InvalidOperationException("User not found.");
+            await _userRepository.UpdateAsync(user);
         }
 
         public async Task DeleteUser(int id)
         {
-            try
-            {
-                var existingUser = await _userRepository.GetByIdAsync(id);
-
-                if (existingUser == null)
-                {
-                    throw new Exception("User not found");
-                }
-
-                await _userRepository.DeleteAsync(id);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            if (await _userRepository.GetByIdAsync(id) == null)
+                throw new InvalidOperationException("User not found.");
+            await _userRepository.DeleteAsync(id);
         }
     }
 }
