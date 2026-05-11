@@ -13,13 +13,14 @@ namespace SchoolLabApp
             ApplicationConfiguration.Initialize();
 
             var context = new SchoolLabAppDbContext();
-            DbSeeder.Seed(context);
 
-            var userRepo    = new UserRepository(context);
-            var userService = new UserService(userRepo);
-            var roleService = new RoleService(context);
+            var assetRepository = new AssetRepository(context);
 
-            Application.Run(new Login(userService, roleService, context));
+            var assetService = new AssetService(assetRepository);
+
+            Application.Run(new TechnicianPanel(assetService));
+
+            //TO DO: Main :D
         }
     }
 }
