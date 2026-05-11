@@ -12,15 +12,21 @@ namespace SchoolLabApp
         {
             ApplicationConfiguration.Initialize();
 
+            // DbContext
             var context = new SchoolLabAppDbContext();
 
-            var assetRepository = new AssetRepository(context);
+            // Repositories
+            var userRepository = new UserRepository(context);
+            var roleRepository = new RoleRepository(context);
 
-            var assetService = new AssetService(assetRepository);
+            // Services
+            var userService = new UserService(userRepository);
+            var roleService = new RoleService(roleRepository);
 
-            Application.Run(new TechnicianPanel(assetService));
+            // Start Register Form
+            Application.Run(new Register(userService, roleService));
 
-            //TO DO: Main :D
+            //auto num inventory number
         }
     }
 }
