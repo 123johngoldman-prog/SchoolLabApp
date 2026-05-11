@@ -12,8 +12,8 @@ using SchoolLabApp.Data;
 namespace SchoolLabApp.Migrations
 {
     [DbContext(typeof(SchoolLabAppDbContext))]
-    [Migration("20260425140958_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260511195719_InitCreate")]
+    partial class InitCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,15 +40,12 @@ namespace SchoolLabApp.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InventoryNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
