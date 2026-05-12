@@ -3409,39 +3409,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\vlado\\.nuget\\packages\\": {},
->>>>>>> origin/Test
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
       "projectName": "SchoolLabApp",
       "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
-      "projectName": "SchoolLabApp",
-      "projectPath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp.csproj",
-      "packagesPath": "C:\\Users\\vlado\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vlado\\OneDrive\\Документи\\GitHub\\SchoolLabApp\\SchoolLabApp\\obj\\",
->>>>>>> origin/Test
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\vlado\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> origin/Test
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

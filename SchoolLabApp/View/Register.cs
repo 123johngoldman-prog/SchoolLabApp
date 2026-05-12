@@ -1,4 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using SchoolLabApp.Data;
 using SchoolLabApp.Models;
+using SchoolLabApp.Repositories.Implementations;
 using SchoolLabApp.Services;
 using System;
 using System.Collections.Generic;
@@ -10,19 +13,21 @@ namespace SchoolLabApp.View
     {
         private readonly UserService _userService;
         private readonly RoleService _roleService;
+        private readonly SchoolLabAppDbContext _context;
         private readonly Dictionary<string, int> _roleMap = new();
 
-        public Register(UserService userService, RoleService roleService)
+        public Register(UserService userService, RoleService roleService,SchoolLabAppDbContext context)
         {
             InitializeComponent();
             _userService = userService;
             _roleService = roleService;
+            _context = context;
         }
 
         private async void Register_Load(object sender, EventArgs e)
         {
             try
-            {
+            { 
                 var roles = await _roleService.GetAllAsync();
                 comboBoxRegisterRole.Items.Clear();
                 _roleMap.Clear();
@@ -60,6 +65,14 @@ namespace SchoolLabApp.View
 
                 if (!_roleMap.TryGetValue(comboBoxRegisterRole.SelectedItem.ToString()!, out int roleId))
                     throw new InvalidOperationException("Selected role not found in database.");
+
+                if(comboBoxRegisterRole.SelectedItem == "Technician")
+                {
+                    var assetRepo = new AssetRepository(_context);
+                    var assetService = new AssetService(assetRepo);
+                    var panel = new TechnicianPasswordPanel(_userService,_roleService,_context);
+                    panel.ShowDialog();
+                }
 
                 var user = new User
                 {

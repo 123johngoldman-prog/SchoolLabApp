@@ -1,66 +1,53 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\view\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SchoolLab/True/SqlTable/dbo.Roles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\view\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\view\\technicianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\user\\desktop\\schoollabapp\\schoollabapp\\schoollabapp\\view\\technicianpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-  "WorkspaceRootPath": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\view\\reportpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\reportpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\helpers\\technicianpasswordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\helpers\\technicianpasswordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> origin/Test
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\view\\technicianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\view\\technicianpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,208 +57,159 @@
       "DocumentGroups": [
         {
           "DockedWidth": 261,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-<<<<<<< HEAD
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Roles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SchoolLab/True/SqlTable/dbo.Roles.sql",
+              "ToolTip": "dbo.Roles [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-12T17:59:31.631Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AssetService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\AssetService.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\Services\\AssetService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\AssetService.cs",
-              "RelativeToolTip": "SchoolLabApp\\Services\\AssetService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:27:25.317Z",
-              "EditorCaption": ""
-=======
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
->>>>>>> origin/Test
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-<<<<<<< HEAD
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:23:15.601Z",
-=======
-              "Title": "TechnicianPasswordPanel.cs",
-              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
-              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
-              "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T16:23:51.271Z",
->>>>>>> origin/Test
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Program.cs",
-              "RelativeToolTip": "SchoolLabApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:10:43.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Register.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\Register.cs",
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\Register.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\View\\Register.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\Register.cs [Design]",
-              "RelativeToolTip": "SchoolLabApp\\View\\Register.cs [Design]",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\Register.cs",
+              "RelativeToolTip": "SchoolLabApp\\View\\Register.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAEkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:15:36.919Z",
-              "EditorCaption": " [Design]"
-=======
+              "WhenOpened": "2026-05-12T17:31:51.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TechnicianPasswordPanel.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "Title": "TechnicianPasswordPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
-              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs [Design]",
-              "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs [Design]",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAArwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T16:23:45.451Z"
->>>>>>> origin/Test
+              "WhenOpened": "2026-05-12T17:35:09.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-<<<<<<< HEAD
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\RoleService.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\Services\\RoleService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\RoleService.cs",
-              "RelativeToolTip": "SchoolLabApp\\Services\\RoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:13:46.712Z",
-=======
-              "Title": "TechnicianPasswordManager.cs",
-              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
-              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
-              "RelativeToolTip": "SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T16:22:38.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Program.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\Program.cs",
-              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Program.cs*",
-              "RelativeToolTip": "SchoolLabApp\\Program.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Program.cs",
+              "RelativeToolTip": "SchoolLabApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T16:18:21.837Z",
->>>>>>> origin/Test
+              "WhenOpened": "2026-05-12T17:34:26.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 3,
-              "Title": "RoleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
-              "RelativeToolTip": "SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\Login.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\View\\Login.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\Login.cs",
+              "RelativeToolTip": "SchoolLabApp\\View\\Login.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAD4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:13:23.216Z",
+              "WhenOpened": "2026-05-12T17:32:09.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IRoleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "RelativeToolTip": "SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Title": "AssetService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\AssetService.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\Services\\AssetService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\AssetService.cs",
+              "RelativeToolTip": "SchoolLabApp\\Services\\AssetService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:11:27.588Z",
+              "WhenOpened": "2026-05-12T17:20:44.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TechnicianPanel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\View\\TechnicianPanel.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.cs",
-              "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:08:59.835Z",
+              "WhenOpened": "2026-05-12T17:20:44.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Services\\RoleService.cs",
+              "RelativeToolTip": "SchoolLabApp\\Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:20:44.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
+              "RelativeToolTip": "SchoolLabApp\\Repositories\\Implementations\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:20:44.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "RelativeToolTip": "SchoolLabApp\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:20:44.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TechnicianPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\View\\TechnicianPanel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.cs",
+              "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:20:44.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "TechnicianPanel.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.Designer.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\View\\TechnicianPanel.Designer.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPanel.Designer.cs",
               "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPanel.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:08:57.295Z",
-=======
-              "DocumentIndex": 1,
-              "Title": "ReportPanel.cs",
-              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\ReportPanel.cs",
-              "RelativeDocumentMoniker": "SchoolLabApp\\View\\ReportPanel.cs",
-              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\ReportPanel.cs",
-              "RelativeToolTip": "SchoolLabApp\\View\\ReportPanel.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwAYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T16:15:30.787Z",
->>>>>>> origin/Test
+              "WhenOpened": "2026-05-12T17:20:44.918Z",
               "EditorCaption": ""
             }
           ]

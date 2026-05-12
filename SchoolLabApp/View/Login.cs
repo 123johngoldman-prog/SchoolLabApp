@@ -71,7 +71,7 @@ namespace SchoolLabApp.View
 
         private void btnLoginRegister_Click(object sender, EventArgs e)
         {
-            var register = new Register(_userService, _roleService);
+            var register = new Register(_userService, _roleService,_context);
             register.ShowDialog();
         }
     }

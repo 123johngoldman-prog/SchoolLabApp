@@ -14,7 +14,6 @@ namespace SchoolLabApp
         {
             ApplicationConfiguration.Initialize();
 
-<<<<<<< HEAD
             // DbContext
             var context = new SchoolLabAppDbContext();
 
@@ -27,23 +26,8 @@ namespace SchoolLabApp
             var roleService = new RoleService(roleRepository);
 
             // Start Register Form
-            Application.Run(new Register(userService, roleService));
+            Application.Run(new Register(userService, roleService,context));
 
-            //auto num inventory number
-=======
-            TechnicianPasswordManager.Initialize();
-
-            var context = new SchoolLabAppDbContext();
-
-            var userRepository = new UserRepository(context);
-
-            var userService = new UserService(userRepository);
-            var roleService = new RoleService(context);
-
-            Application.Run(
-                new Login(userService, roleService, context)
-            );
->>>>>>> origin/Test
         }
     }
 }

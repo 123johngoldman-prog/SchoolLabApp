@@ -44,19 +44,18 @@ namespace SchoolLabApp.View
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(182, 524);
+            label1.Location = new Point(159, 393);
             label1.Name = "label1";
-            label1.Size = new Size(112, 20);
+            label1.Size = new Size(89, 15);
             label1.TabIndex = 44;
             label1.Text = "Show password";
             // 
             // checkBoxRegister
             // 
             checkBoxRegister.AutoSize = true;
-            checkBoxRegister.Location = new Point(290, 524);
-            checkBoxRegister.Margin = new Padding(3, 4, 3, 4);
+            checkBoxRegister.Location = new Point(254, 393);
             checkBoxRegister.Name = "checkBoxRegister";
-            checkBoxRegister.Size = new Size(18, 17);
+            checkBoxRegister.Size = new Size(15, 14);
             checkBoxRegister.TabIndex = 43;
             checkBoxRegister.UseVisualStyleBackColor = true;
             checkBoxRegister.CheckedChanged += checkBoxRegister_CheckedChanged;
@@ -64,54 +63,51 @@ namespace SchoolLabApp.View
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(88, 448);
+            label3.Location = new Point(77, 336);
             label3.Name = "label3";
-            label3.Size = new Size(129, 20);
+            label3.Size = new Size(104, 15);
             label3.TabIndex = 42;
             label3.Text = "Confirm password";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(88, 367);
+            label2.Location = new Point(77, 275);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(57, 15);
             label2.TabIndex = 41;
             label2.Text = "Password";
             // 
             // txtRegisterPasswordConfirm
             // 
-            txtRegisterPasswordConfirm.Location = new Point(88, 472);
-            txtRegisterPasswordConfirm.Margin = new Padding(3, 4, 3, 4);
+            txtRegisterPasswordConfirm.Location = new Point(77, 354);
             txtRegisterPasswordConfirm.Name = "txtRegisterPasswordConfirm";
-            txtRegisterPasswordConfirm.Size = new Size(227, 27);
+            txtRegisterPasswordConfirm.Size = new Size(199, 23);
             txtRegisterPasswordConfirm.TabIndex = 40;
             txtRegisterPasswordConfirm.UseSystemPasswordChar = true;
             // 
             // txtRegisterPassword
             // 
-            txtRegisterPassword.Location = new Point(88, 391);
-            txtRegisterPassword.Margin = new Padding(3, 4, 3, 4);
+            txtRegisterPassword.Location = new Point(77, 293);
             txtRegisterPassword.Name = "txtRegisterPassword";
-            txtRegisterPassword.Size = new Size(227, 27);
+            txtRegisterPassword.Size = new Size(199, 23);
             txtRegisterPassword.TabIndex = 39;
             txtRegisterPassword.UseSystemPasswordChar = true;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(88, 275);
+            label6.Location = new Point(77, 206);
             label6.Name = "label6";
-            label6.Size = new Size(75, 20);
+            label6.Size = new Size(60, 15);
             label6.TabIndex = 47;
             label6.Text = "Username";
             // 
             // txtRegisterUsername
             // 
-            txtRegisterUsername.Location = new Point(88, 299);
-            txtRegisterUsername.Margin = new Padding(3, 4, 3, 4);
+            txtRegisterUsername.Location = new Point(77, 224);
             txtRegisterUsername.Name = "txtRegisterUsername";
-            txtRegisterUsername.Size = new Size(227, 27);
+            txtRegisterUsername.Size = new Size(199, 23);
             txtRegisterUsername.TabIndex = 45;
             // 
             // comboBoxRegisterRole
@@ -119,24 +115,18 @@ namespace SchoolLabApp.View
             comboBoxRegisterRole.BackColor = SystemColors.HighlightText;
             comboBoxRegisterRole.ForeColor = SystemColors.InfoText;
             comboBoxRegisterRole.FormattingEnabled = true;
-<<<<<<< HEAD
-            comboBoxRegisterRole.Items.AddRange(new object[] { "Student", "Teacher", "Technician" });
-            comboBoxRegisterRole.Location = new Point(77, 430);
-=======
             comboBoxRegisterRole.Items.AddRange(new object[] { "Student", "Teacher", "Technician", "Admin" });
-            comboBoxRegisterRole.Location = new Point(88, 573);
-            comboBoxRegisterRole.Margin = new Padding(3, 4, 3, 4);
->>>>>>> origin/Test
+            comboBoxRegisterRole.Location = new Point(77, 430);
             comboBoxRegisterRole.Name = "comboBoxRegisterRole";
-            comboBoxRegisterRole.Size = new Size(227, 28);
+            comboBoxRegisterRole.Size = new Size(199, 23);
             comboBoxRegisterRole.TabIndex = 50;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(88, 549);
+            label4.Location = new Point(77, 412);
             label4.Name = "label4";
-            label4.Size = new Size(39, 20);
+            label4.Size = new Size(30, 15);
             label4.TabIndex = 49;
             label4.Text = "Role";
             // 
@@ -147,10 +137,9 @@ namespace SchoolLabApp.View
             btnRegisterRegister.FlatAppearance.BorderSize = 4;
             btnRegisterRegister.FlatStyle = FlatStyle.Popup;
             btnRegisterRegister.ForeColor = SystemColors.ActiveCaptionText;
-            btnRegisterRegister.Location = new Point(161, 677);
-            btnRegisterRegister.Margin = new Padding(3, 4, 3, 4);
+            btnRegisterRegister.Location = new Point(141, 508);
             btnRegisterRegister.Name = "btnRegisterRegister";
-            btnRegisterRegister.Size = new Size(93, 37);
+            btnRegisterRegister.Size = new Size(81, 28);
             btnRegisterRegister.TabIndex = 51;
             btnRegisterRegister.Text = "Register";
             btnRegisterRegister.UseVisualStyleBackColor = false;
@@ -158,10 +147,10 @@ namespace SchoolLabApp.View
             // 
             // Register
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(411, 760);
+            ClientSize = new Size(360, 570);
             Controls.Add(btnRegisterRegister);
             Controls.Add(comboBoxRegisterRole);
             Controls.Add(label4);
@@ -173,7 +162,6 @@ namespace SchoolLabApp.View
             Controls.Add(label2);
             Controls.Add(txtRegisterPasswordConfirm);
             Controls.Add(txtRegisterPassword);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Register";
             Text = "Register";
             Load += Register_Load;

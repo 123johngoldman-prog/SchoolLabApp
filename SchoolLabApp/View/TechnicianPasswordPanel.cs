@@ -1,3 +1,4 @@
+using SchoolLabApp.Data;
 using SchoolLabApp.Helpers;
 using SchoolLabApp.Services;
 using System;
@@ -9,14 +10,15 @@ namespace SchoolLabApp.View
     {
         private readonly UserService _userService;
         private readonly RoleService _roleService;
+        private readonly SchoolLabAppDbContext _context;
 
-        public TechnicianPasswordPanel(UserService userService, RoleService roleService)
+        public TechnicianPasswordPanel(UserService userService, RoleService roleService,SchoolLabAppDbContext context)
         {
             InitializeComponent();
 
             _userService = userService;
             _roleService = roleService;
-
+            _context = context;
             TechnicianPasswordManager.Initialize();
         }
 
@@ -45,7 +47,7 @@ namespace SchoolLabApp.View
                 return;
             }
 
-            var register = new Register(_userService, _roleService);
+            var register = new Register(_userService, _roleService,_context);
 
             register.ShowDialog();
 
