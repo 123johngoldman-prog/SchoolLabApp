@@ -12,7 +12,7 @@ using SchoolLabApp.Data;
 namespace SchoolLabApp.Migrations
 {
     [DbContext(typeof(SchoolLabAppDbContext))]
-    [Migration("20260511195243_InitCreate")]
+    [Migration("20260512161419_InitCreate")]
     partial class InitCreate
     {
         /// <inheritdoc />
