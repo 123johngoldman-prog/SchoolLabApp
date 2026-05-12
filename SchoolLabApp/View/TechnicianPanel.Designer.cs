@@ -92,7 +92,7 @@ namespace SchoolLabApp.View
             // 
             // listBoxTechnicianPanel
             // 
-            listBoxTechnicianPanel.ForeColor = SystemColors.Window;
+            listBoxTechnicianPanel.ForeColor = SystemColors.MenuText;
             listBoxTechnicianPanel.FormattingEnabled = true;
             listBoxTechnicianPanel.Location = new Point(272, 26);
             listBoxTechnicianPanel.Name = "listBoxTechnicianPanel";

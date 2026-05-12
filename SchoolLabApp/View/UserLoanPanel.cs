@@ -1,3 +1,4 @@
+using SchoolLabApp.Models;
 using SchoolLabApp.Services;
 using System;
 using System.Windows.Forms;
@@ -19,20 +20,31 @@ namespace SchoolLabApp.View
         }
 
         private async void UserLoanPanel_Load(object sender, EventArgs e)
-            => await LoadAssets();
+        {
+            await LoadAssets();
+        }
 
-        private async System.Threading.Tasks.Task LoadAssets()
+        private async Task LoadAssets()
         {
             try
             {
                 int categoryId = comboBoxUserLoanPanelCategory.SelectedIndex + 1;
-                var assets = categoryId > 0
-                    ? await _assetService.GetByCategory(categoryId)
-                    : await _assetService.GetAll();
+                IEnumerable<Asset> assets;
+
+                if (categoryId > 0)
+                {
+                    assets = await _assetService.GetByCategory(categoryId);
+                }
+                else
+                {
+                    assets = await _assetService.GetAll();
+                }
 
                 listBoxUserLoanPanel.Items.Clear();
                 foreach (var a in assets)
+                {
                     listBoxUserLoanPanel.Items.Add($"{a.Id} | {a.Name} | {a.Status}");
+                }
             }
             catch (Exception ex)
             {
@@ -45,12 +57,19 @@ namespace SchoolLabApp.View
             try
             {
                 if (listBoxUserLoanPanel.SelectedItem == null)
+                {
                     throw new ArgumentException("Select an asset first.");
+                }
                 if (!int.TryParse(txtUserLoanPanelDuration.Text, out int days) || days <= 0)
+                {
                     throw new ArgumentException("Enter a valid duration in days.");
+                }
 
                 int assetId = int.Parse(listBoxUserLoanPanel.SelectedItem.ToString()!.Split('|')[0].Trim());
-                await _loanService.AddLoan(assetId, _personId, "Active");
+                MessageBox.Show($"AssetId: {assetId}, PersonId: {_personId}");
+
+                await _loanService.AddLoan(assetId, _personId, int.Parse(txtUserLoanPanelDuration.Text), "Unavelible");
+
                 MessageBox.Show("Asset loaned successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 await LoadAssets();
             }
@@ -73,7 +92,9 @@ namespace SchoolLabApp.View
         }
 
         private async void comboBoxUserLoanPanelCategory_SelectedIndexChanged(object sender, EventArgs e)
-            => await LoadAssets();
+        {
+            await LoadAssets();
+        }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e) { }
     }

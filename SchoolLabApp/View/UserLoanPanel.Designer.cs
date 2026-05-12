@@ -67,7 +67,7 @@ namespace SchoolLabApp.View
             // 
             // listBoxUserLoanPanel
             // 
-            listBoxUserLoanPanel.ForeColor = SystemColors.MenuBar;
+            listBoxUserLoanPanel.ForeColor = SystemColors.InfoText;
             listBoxUserLoanPanel.FormattingEnabled = true;
             listBoxUserLoanPanel.Location = new Point(272, 26);
             listBoxUserLoanPanel.Name = "listBoxUserLoanPanel";

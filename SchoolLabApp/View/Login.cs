@@ -41,7 +41,7 @@ namespace SchoolLabApp.View
                     var loanService = new LoanService(loanRepo);
                     var assetRepo   = new AssetRepository(_context);
                     var assetService= new AssetService(assetRepo);
-                    var panel = new UserLoanPanel(loanService, assetService, user.PersonId ?? 0);
+                    var panel = new UserLoanPanel(loanService, assetService, user.Id);
                     panel.ShowDialog();
                 }
                 else if (role == "Technician")

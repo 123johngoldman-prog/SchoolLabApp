@@ -20,9 +20,11 @@ namespace SchoolLabApp.View
         }
 
         private async void AdminPanel_Load(object sender, EventArgs e)
-            => await LoadUsers();
+        {
+            await LoadUsers();
+        }
 
-        private async System.Threading.Tasks.Task LoadUsers()
+        private async Task LoadUsers()
         {
             try
             {

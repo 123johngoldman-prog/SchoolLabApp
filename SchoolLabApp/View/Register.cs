@@ -68,7 +68,11 @@ namespace SchoolLabApp.View
                     RoleId   = roleId
                 };
 
+<<<<<<< HEAD
                 await _userService.Register(user);   
+=======
+                await _userService.Register(user);  
+>>>>>>> Ventsi-branch
 
                 MessageBox.Show("Registration successful!", "Success",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

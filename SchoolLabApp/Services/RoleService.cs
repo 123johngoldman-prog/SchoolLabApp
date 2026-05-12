@@ -42,7 +42,9 @@ namespace SchoolLabApp.Services
         public async Task AddAsync(Role role)
         {
             if (string.IsNullOrWhiteSpace(role.Name))
+            {
                 throw new ArgumentException("Role name cannot be empty.");
+            }
 
             await _context.Roles.AddAsync(role);
             await _context.SaveChangesAsync();

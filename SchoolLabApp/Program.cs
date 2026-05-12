@@ -15,6 +15,7 @@ namespace SchoolLabApp
             // DbContext
             var context = new SchoolLabAppDbContext();
 
+<<<<<<< HEAD
             // Repositories
             var userRepository = new UserRepository(context);
             var roleRepository = new RoleRepository(context);
@@ -27,6 +28,14 @@ namespace SchoolLabApp
             Application.Run(new Register(userService, roleService));
 
             //auto num inventory number
+=======
+            var userRepository = new UserRepository(context);
+
+            var userService = new UserService(userRepository);
+            var roleService = new RoleService(context);
+
+            Application.Run(new Login(userService,roleService,context));
+>>>>>>> Ventsi-branch
         }
     }
 }
