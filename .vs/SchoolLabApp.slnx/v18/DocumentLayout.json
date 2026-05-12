@@ -191,8 +191,7 @@
               "RelativeToolTip": "SchoolLabApp\\Migrations\\20260511195719_InitCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T19:57:20.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T19:57:20.037Z"
             },
             {
               "$type": "Document",
@@ -200,9 +199,9 @@
               "Title": "SchoolLabAppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Data\\SchoolLabAppDbContext.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\Data\\SchoolLabAppDbContext.cs",
-              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Data\\SchoolLabAppDbContext.cs*",
-              "RelativeToolTip": "SchoolLabApp\\Data\\SchoolLabAppDbContext.cs*",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABkAAAAnAQAAAAAAAA==",
+              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Data\\SchoolLabAppDbContext.cs",
+              "RelativeToolTip": "SchoolLabApp\\Data\\SchoolLabAppDbContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwBgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T19:43:09.53Z",
               "EditorCaption": ""
