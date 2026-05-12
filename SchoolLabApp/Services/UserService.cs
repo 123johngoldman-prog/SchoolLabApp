@@ -1,16 +1,20 @@
 using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Implementations;
+using SchoolLabApp.Repositories.Interfaces;
 
 namespace SchoolLabApp.Services
 {
+    
     public class UserService
     {
-        private readonly UserRepository _userRepository;
+        private readonly IUserRepository _userRepository;
 
-        public UserService(UserRepository userRepository)
-            => _userRepository = userRepository;
+        public UserService(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
 
-        // Throws on failure — callers catch ex.Message and show it via MessageBox.
+
         public async Task Register(User user)
         {
             if (user == null) throw new ArgumentNullException(nameof(user));

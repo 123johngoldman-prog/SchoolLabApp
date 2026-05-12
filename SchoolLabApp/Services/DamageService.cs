@@ -1,67 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Microsoft.EntityFrameworkCore;
-using SchoolLabApp.Data;
-using SchoolLabApp.Models;
+﻿using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SchoolLabApp.Services
 {
-    public class DamageService : IDamageRepository
+    public class DamageService
     {
-        private readonly SchoolLabAppDbContext _context;
+        private readonly IDamageRepository _damageRepository;
 
-        public DamageService(SchoolLabAppDbContext context)
-        {
-            _context = context;
-        }
+        public DamageService(IDamageRepository damageRepository)
+            => _damageRepository = damageRepository;
 
-        public async Task<IEnumerable<Damage>> GetAllAsync()
+        public async Task AddDamage(int assetId, string description)
         {
-            return await _context.Damages
-                .Include(d => d.Asset)
-                .ToListAsync();
-        }
-
-        public async Task<Damage?> GetByIdAsync(int id)
-        {
-            return await _context.Damages
-                .Include(d => d.Asset)
-                .FirstOrDefaultAsync(d => d.Id == id);
-        }
-
-        public async Task AddAsync(Damage damage)
-        {
-            if (string.IsNullOrWhiteSpace(damage.Description))
+            if (string.IsNullOrWhiteSpace(description))
                 throw new ArgumentException("Description cannot be empty.");
 
-            damage.DateReported = DateTime.UtcNow;
-
-            await _context.Damages.AddAsync(damage);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task UpdateAsync(Damage damage)
-        {
-            _context.Damages.Update(damage);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            var damage = await _context.Damages.FindAsync(id);
-            if (damage != null)
+            var damage = new Damage
             {
-                _context.Damages.Remove(damage);
-                await _context.SaveChangesAsync();
-            }
+                AssetId = assetId,
+                Description = description,
+                DateReported = DateTime.Now
+            };
+            await _damageRepository.AddAsync(damage);
         }
 
-        public async Task<bool> ExistsAsync(int id)
+        public async Task UpdateDamage(Damage damage)
         {
-            return await _context.Damages.AnyAsync(d => d.Id == id);
+            if (await _damageRepository.GetByIdAsync(damage.Id) == null)
+                throw new InvalidOperationException("Damage record not found.");
+            await _damageRepository.UpdateAsync(damage);
         }
+
+        public async Task DeleteDamage(int id)
+        {
+            if (await _damageRepository.GetByIdAsync(id) == null)
+                throw new InvalidOperationException("Damage record not found.");
+            await _damageRepository.DeleteAsync(id);
+        }
+
+        public async Task<IEnumerable<Damage>> GetAll()
+            => await _damageRepository.GetAllAsync();
+
+        public async Task<Damage?> GetById(int id)
+            => await _damageRepository.GetByIdAsync(id);
     }
 }

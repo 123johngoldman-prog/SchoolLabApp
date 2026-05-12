@@ -1,72 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Microsoft.EntityFrameworkCore;
-using SchoolLabApp.Models;
-using SchoolLabApp.Data;
+﻿using SchoolLabApp.Models;
 using SchoolLabApp.Repositories.Interfaces;
-using SchoolLabApp.Repositories.Implementations;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SchoolLabApp.Services
 {
-    public class RoleService : IRoleRepository
+    public class RoleService
     {
-        private readonly SchoolLabAppDbContext _context;
-        private RoleRepository roleRepository;
+        private readonly IRoleRepository _roleRepository;
 
-        public RoleService(SchoolLabAppDbContext context)
-        {
-            _context = context;
-        }
+        public RoleService(IRoleRepository roleRepository)
+            => _roleRepository = roleRepository;
 
-        public RoleService(RoleRepository roleRepository)
+        public async Task AddRole(string name)
         {
-            this.roleRepository = roleRepository;
-        }
-
-        public async Task<IEnumerable<Role>> GetAllAsync()
-        {
-            return await _context.Roles
-                .Include(r => r.Users)
-                .ToListAsync();
-        }
-
-        public async Task<Role?> GetByIdAsync(int id)
-        {
-            return await _context.Roles
-                .Include(r => r.Users)
-                .FirstOrDefaultAsync(r => r.Id == id);
-        }
-
-        public async Task AddAsync(Role role)
-        {
-            if (string.IsNullOrWhiteSpace(role.Name))
+            if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException("Role name cannot be empty.");
 
-            await _context.Roles.AddAsync(role);
-            await _context.SaveChangesAsync();
+            var role = new Role { Name = name };
+            await _roleRepository.AddAsync(role);
         }
 
-        public async Task UpdateAsync(Role role)
+        public async Task UpdateRole(Role role)
         {
-            _context.Roles.Update(role);
-            await _context.SaveChangesAsync();
+            if (await _roleRepository.GetByIdAsync(role.Id) == null)
+                throw new InvalidOperationException("Role not found.");
+            await _roleRepository.UpdateAsync(role);
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task DeleteRole(int id)
         {
-            var role = await _context.Roles.FindAsync(id);
-            if (role != null)
-            {
-                _context.Roles.Remove(role);
-                await _context.SaveChangesAsync();
-            }
+            if (await _roleRepository.GetByIdAsync(id) == null)
+                throw new InvalidOperationException("Role not found.");
+            await _roleRepository.DeleteAsync(id);
         }
 
-        public async Task<bool> ExistsAsync(int id)
-        {
-            return await _context.Roles.AnyAsync(r => r.Id == id);
-        }
+        public async Task<IEnumerable<Role>> GetAll()
+            => await _roleRepository.GetAllAsync();
+
+        public async Task<Role?> GetById(int id)
+            => await _roleRepository.GetByIdAsync(id);
+
+        public async Task<bool> Exists(int id)
+            => await _roleRepository.ExistsAsync(id);
     }
 }

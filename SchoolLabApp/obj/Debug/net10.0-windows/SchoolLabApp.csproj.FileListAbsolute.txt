@@ -326,10 +326,7 @@ C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\SchoolLabApp.pdb
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Azure.Core.dll
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Azure.Identity.dll
-<<<<<<< Updated upstream
-=======
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Castle.Core.dll
->>>>>>> Stashed changes
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Humanizer.dll
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Microsoft.Bcl.Cryptography.dll
@@ -367,10 +364,7 @@ C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Microsoft.VisualStudio.SolutionPersistence.dll
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Mono.TextTemplating.dll
-<<<<<<< Updated upstream
-=======
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Moq.dll
->>>>>>> Stashed changes
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\Newtonsoft.Json.dll
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\System.ClientModel.dll
 C:\Users\Admin\Documents\GitHub\SchoolLabApp\SchoolLabApp\SchoolLabApp\bin\Debug\net10.0-windows\System.Composition.AttributedModel.dll
