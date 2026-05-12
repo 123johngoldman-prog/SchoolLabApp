@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\",
   "Documents": [
     {
@@ -37,6 +38,29 @@
     {
       "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\admin\\documents\\github\\schoollabapp\\schoollabapp\\schoollabapp\\view\\technicianpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\view\\reportpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\reportpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\view\\technicianpasswordpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|c:\\users\\vlado\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\schoollabapp\\schoollabapp\\helpers\\technicianpasswordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC0D9BF-DD4F-38CB-BE31-B1B41427D162}|SchoolLabApp\\SchoolLabApp.csproj|solutionrelative:schoollabapp\\helpers\\technicianpasswordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> origin/Test
     }
   ],
   "DocumentGroupContainers": [
@@ -46,6 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 261,
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -60,10 +85,42 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T19:27:25.317Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+>>>>>>> origin/Test
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\Repositories\\Interfaces\\IRepository.cs",
@@ -72,10 +129,58 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T19:23:15.601Z"
+=======
+              "Title": "TechnicianPasswordPanel.cs",
+              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:23:51.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TechnicianPasswordPanel.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs",
+              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\TechnicianPasswordPanel.cs [Design]",
+              "RelativeToolTip": "SchoolLabApp\\View\\TechnicianPasswordPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:23:45.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TechnicianPasswordManager.cs",
+              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
+              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
+              "RelativeToolTip": "SchoolLabApp\\Helpers\\TechnicianPasswordManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:22:38.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\Program.cs",
+              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\Program.cs",
+              "RelativeToolTip": "SchoolLabApp\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:18:21.837Z",
+              "EditorCaption": ""
+>>>>>>> origin/Test
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SchoolLabApp\\SchoolLabApp\\SchoolLabApp\\Program.cs",
               "RelativeDocumentMoniker": "SchoolLabApp\\Program.cs",
@@ -155,6 +260,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T19:08:57.295Z"
+=======
+              "Title": "ReportPanel.cs",
+              "DocumentMoniker": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\ReportPanel.cs",
+              "RelativeDocumentMoniker": "SchoolLabApp\\View\\ReportPanel.cs",
+              "ToolTip": "C:\\Users\\vlado\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\SchoolLabApp\\SchoolLabApp\\View\\ReportPanel.cs",
+              "RelativeToolTip": "SchoolLabApp\\View\\ReportPanel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:15:30.787Z",
+              "EditorCaption": ""
+>>>>>>> origin/Test
             }
           ]
         }

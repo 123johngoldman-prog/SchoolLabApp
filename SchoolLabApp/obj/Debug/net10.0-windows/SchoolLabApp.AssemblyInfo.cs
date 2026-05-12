@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86be557460d97c9c93b26430867faf1d0edaba52")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+717c6166612bfb026f3bf591929344f0382eeb15")]
+>>>>>>> origin/Test
 [assembly: System.Reflection.AssemblyProductAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

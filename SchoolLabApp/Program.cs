@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using SchoolLabApp.Data;
+using SchoolLabApp.Helpers;
 using SchoolLabApp.Repositories.Implementations;
 using SchoolLabApp.Services;
 using SchoolLabApp.View;
@@ -12,6 +14,7 @@ namespace SchoolLabApp
         {
             ApplicationConfiguration.Initialize();
 
+<<<<<<< HEAD
             // DbContext
             var context = new SchoolLabAppDbContext();
 
@@ -27,6 +30,20 @@ namespace SchoolLabApp
             Application.Run(new Register(userService, roleService));
 
             //auto num inventory number
+=======
+            TechnicianPasswordManager.Initialize();
+
+            var context = new SchoolLabAppDbContext();
+
+            var userRepository = new UserRepository(context);
+
+            var userService = new UserService(userRepository);
+            var roleService = new RoleService(context);
+
+            Application.Run(
+                new Login(userService, roleService, context)
+            );
+>>>>>>> origin/Test
         }
     }
 }
