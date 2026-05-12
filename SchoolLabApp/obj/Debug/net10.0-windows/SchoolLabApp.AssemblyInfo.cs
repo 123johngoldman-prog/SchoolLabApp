@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b4645286bd44f12172b4967b8ac3afe950f3bfe")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5307baf121d41efd392eefaaaab92ee26b584b75")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SchoolLabApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
