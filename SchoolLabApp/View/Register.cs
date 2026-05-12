@@ -68,7 +68,7 @@ namespace SchoolLabApp.View
                     RoleId   = roleId
                 };
 
-                await _userService.Register(user);   // throws with message on failure
+                await _userService.Register(user);  
 
                 MessageBox.Show("Registration successful!", "Success",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

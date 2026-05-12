@@ -12,18 +12,14 @@ namespace SchoolLabApp
         {
             ApplicationConfiguration.Initialize();
 
-            // DbContext
             var context = new SchoolLabAppDbContext();
 
-            // Repositories
             var userRepository = new UserRepository(context);
 
-            // Services
             var userService = new UserService(userRepository);
             var roleService = new RoleService(context);
 
-            // Run Register Form
-            Application.Run(new ReportPanel());
+            Application.Run(new Login(userService,roleService,context));
         }
     }
 }

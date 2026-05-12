@@ -11,11 +11,6 @@ namespace SchoolLabApp.Services
     {
         private readonly CategoryRepository _categoryRepository;
 
-        public async Task<IEnumerable<Category>> GetAll()
-        {
-            return await _categoryRepository.GetAllAsync();
-        }
-
         public CategoryService(CategoryRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;
@@ -79,6 +74,11 @@ namespace SchoolLabApp.Services
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        public async Task<IEnumerable<Category>> GetAll()
+        {
+            return await _categoryRepository.GetAllAsync();
         }
     }
 }

@@ -128,7 +128,7 @@ namespace SchoolLabApp.View
             // 
             // listBoxAdminPanel
             // 
-            listBoxAdminPanel.ForeColor = SystemColors.ControlLightLight;
+            listBoxAdminPanel.ForeColor = SystemColors.ControlText;
             listBoxAdminPanel.FormattingEnabled = true;
             listBoxAdminPanel.Location = new Point(272, 26);
             listBoxAdminPanel.Name = "listBoxAdminPanel";

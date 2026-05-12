@@ -23,7 +23,9 @@ namespace SchoolLabApp.View
                 var loans = await _loanService.GetLoansByPerson(_personId);
                 listBoxUserReturnPanel.Items.Clear();
                 foreach (var l in loans)
+                {
                     listBoxUserReturnPanel.Items.Add($"{l.Id} | {l.Asset?.Name} | {l.Status} | Started: {l.StartDate:d}");
+                }
             }
             catch (Exception ex)
             {
@@ -36,7 +38,9 @@ namespace SchoolLabApp.View
             try
             {
                 if (listBoxUserReturnPanel.SelectedItem == null)
+                {
                     throw new ArgumentException("Select a loan to return.");
+                }
 
                 int loanId = int.Parse(listBoxUserReturnPanel.SelectedItem.ToString()!.Split('|')[0].Trim());
                 await _loanService.ReturnLoan(loanId);
@@ -50,6 +54,8 @@ namespace SchoolLabApp.View
         }
 
         private void btnUserReturnePanelBackToLoans_Click(object sender, EventArgs e)
-            => this.Close();
+        { 
+            this.Close();
+        }
     }
 }
