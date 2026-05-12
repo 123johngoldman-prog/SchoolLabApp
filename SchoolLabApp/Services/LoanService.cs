@@ -11,7 +11,9 @@ namespace SchoolLabApp.Services
         private readonly LoanRepository _loanRepository;
 
         public LoanService(LoanRepository loanRepository)
-            => _loanRepository = loanRepository;
+        {
+            _loanRepository = loanRepository;
+        }
 
         public async Task AddLoan(int assetId, int personId, int durationDays, string status)
         {
