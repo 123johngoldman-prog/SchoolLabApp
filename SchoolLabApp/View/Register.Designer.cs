@@ -58,7 +58,7 @@ namespace SchoolLabApp.View
             checkBoxRegister.Size = new Size(15, 14);
             checkBoxRegister.TabIndex = 43;
             checkBoxRegister.UseVisualStyleBackColor = true;
-            checkBoxRegister.CheckedChanged += CheckBoxRegister_CheckedChanged;
+            checkBoxRegister.CheckedChanged += checkBoxRegister_CheckedChanged;
             // 
             // label3
             // 
