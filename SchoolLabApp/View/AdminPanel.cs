@@ -131,7 +131,7 @@ namespace SchoolLabApp.View
         {
             if (comboBoxAdminPanelRole.SelectedItem == null)
                 throw new ArgumentException("Please select a role.");
-            var roles = await _roleService.GetAllAsync();
+            var roles = await _roleService.GetAll();
             string selected = comboBoxAdminPanelRole.SelectedItem.ToString()!;
             foreach (var r in roles)
                 if (r.Name == selected) return r.Id;
